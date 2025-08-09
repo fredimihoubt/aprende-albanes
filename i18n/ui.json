@@ -1,0 +1,16 @@
+{
+  "es": {
+    "vocabTitle": "Vocabulario (SQ–PL–ES)",
+    "addCustom": "Añadir palabra/frase",
+    "again": "Fallé",
+    "good": "Recordé",
+    "speak": "Escuchar"
+  },
+  "pl": {
+    "vocabTitle": "Słownictwo (SQ–PL–ES)",
+    "addCustom": "Dodaj słowo/zwrot",
+    "again": "Pomyliłam/em się",
+    "good": "Zapamiętałam/em",
+    "speak": "Odtwórz"
+  }
+}
