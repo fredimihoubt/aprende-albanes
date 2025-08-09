@@ -1,0 +1,1393 @@
+{
+  "A1": {
+    "words": [
+      {
+        "sq": "pershendetje",
+        "pl": "cześć",
+        "es": "hola",
+        "img": "img/people.png"
+      },
+      {
+        "sq": "mirëdita",
+        "pl": "dzień dobry",
+        "es": "buenos días",
+        "img": "img/people.png"
+      },
+      {
+        "sq": "mirëmbrëma",
+        "pl": "dobry wieczór",
+        "es": "buenas noches",
+        "img": "img/people.png"
+      },
+      {
+        "sq": "faleminderit",
+        "pl": "dziękuję",
+        "es": "gracias",
+        "img": "img/people.png"
+      },
+      {
+        "sq": "ju lutem",
+        "pl": "proszę",
+        "es": "por favor",
+        "img": "img/people.png"
+      },
+      {
+        "sq": "po",
+        "pl": "tak",
+        "es": "sí",
+        "img": "img/people.png"
+      },
+      {
+        "sq": "jo",
+        "pl": "nie",
+        "es": "no",
+        "img": "img/people.png"
+      },
+      {
+        "sq": "bukë",
+        "pl": "chleb",
+        "es": "pan",
+        "img": "img/food.png"
+      },
+      {
+        "sq": "mollë",
+        "pl": "jabłko",
+        "es": "manzana",
+        "img": "img/food.png"
+      },
+      {
+        "sq": "ujë",
+        "pl": "woda",
+        "es": "agua",
+        "img": "img/food.png"
+      },
+      {
+        "sq": "kafe",
+        "pl": "kawa",
+        "es": "café",
+        "img": "img/food.png"
+      },
+      {
+        "sq": "djathë",
+        "pl": "ser",
+        "es": "queso",
+        "img": "img/food.png"
+      },
+      {
+        "sq": "familja",
+        "pl": "rodzina",
+        "es": "familia",
+        "img": "img/people.png"
+      },
+      {
+        "sq": "mik",
+        "pl": "przyjaciel",
+        "es": "amigo",
+        "img": "img/people.png"
+      },
+      {
+        "sq": "mike",
+        "pl": "przyjaciółka",
+        "es": "amiga",
+        "img": "img/people.png"
+      },
+      {
+        "sq": "shtepia",
+        "pl": "dom",
+        "es": "casa",
+        "img": "img/house.png"
+      },
+      {
+        "sq": "dritare",
+        "pl": "okno",
+        "es": "ventana",
+        "img": "img/house.png"
+      },
+      {
+        "sq": "derë",
+        "pl": "drzwi",
+        "es": "puerta",
+        "img": "img/house.png"
+      },
+      {
+        "sq": "treg",
+        "pl": "targ",
+        "es": "mercado",
+        "img": "img/market.png"
+      },
+      {
+        "sq": "restorant",
+        "pl": "restauracja",
+        "es": "restaurante",
+        "img": "img/market.png"
+      },
+      {
+        "sq": "biletë",
+        "pl": "bilet",
+        "es": "billete",
+        "img": "img/travel.png"
+      },
+      {
+        "sq": "autobus",
+        "pl": "autobus",
+        "es": "autobús",
+        "img": "img/travel.png"
+      },
+      {
+        "sq": "tren",
+        "pl": "pociąg",
+        "es": "tren",
+        "img": "img/travel.png"
+      },
+      {
+        "sq": "avion",
+        "pl": "samolot",
+        "es": "avión",
+        "img": "img/travel.png"
+      }
+    ],
+    "phrases": [
+      {
+        "sq": "Si je?",
+        "pl": "Jak się masz?",
+        "es": "¿Cómo estás?"
+      },
+      {
+        "sq": "Unë jam mirë",
+        "pl": "Mam się dobrze",
+        "es": "Estoy bien"
+      },
+      {
+        "sq": "Dua një kafe, ju lutem",
+        "pl": "Poproszę kawę",
+        "es": "Quiero un café, por favor"
+      },
+      {
+        "sq": "Ku është tualeti?",
+        "pl": "Gdzie jest toaleta?",
+        "es": "¿Dónde está el baño?"
+      },
+      {
+        "sq": "Faleminderit shumë",
+        "pl": "Dziękuję bardzo",
+        "es": "Muchas gracias"
+      },
+      {
+        "sq": "Sa kushton kjo?",
+        "pl": "Ile to kosztuje?",
+        "es": "¿Cuánto cuesta esto?"
+      },
+      {
+        "sq": "Ku mund të blej bukë?",
+        "pl": "Gdzie mogę kupić chleb?",
+        "es": "¿Dónde puedo comprar pan?"
+      },
+      {
+        "sq": "Më fal",
+        "pl": "Przepraszam",
+        "es": "Perdón"
+      },
+      {
+        "sq": "Shihemi më vonë",
+        "pl": "Do zobaczenia później",
+        "es": "Nos vemos luego"
+      },
+      {
+        "sq": "Mirupafshim",
+        "pl": "Do widzenia",
+        "es": "Adiós"
+      }
+    ],
+    "themes": [
+      {
+        "id": "saludos",
+        "name": "Saludos",
+        "img": "img/people.png"
+      },
+      {
+        "id": "casa",
+        "name": "Casa",
+        "img": "img/house.png"
+      },
+      {
+        "id": "comida",
+        "name": "Comida",
+        "img": "img/food.png"
+      },
+      {
+        "id": "viaje",
+        "name": "Viaje",
+        "img": "img/travel.png"
+      }
+    ]
+  },
+  "B1": {
+    "words": [
+      {
+        "sq": "fjala1",
+        "pl": "pl1",
+        "es": "es1",
+        "img": "img/market.png"
+      },
+      {
+        "sq": "fjala2",
+        "pl": "pl2",
+        "es": "es2",
+        "img": "img/market.png"
+      },
+      {
+        "sq": "fjala3",
+        "pl": "pl3",
+        "es": "es3",
+        "img": "img/market.png"
+      },
+      {
+        "sq": "fjala4",
+        "pl": "pl4",
+        "es": "es4",
+        "img": "img/market.png"
+      },
+      {
+        "sq": "fjala5",
+        "pl": "pl5",
+        "es": "es5",
+        "img": "img/market.png"
+      },
+      {
+        "sq": "fjala6",
+        "pl": "pl6",
+        "es": "es6",
+        "img": "img/market.png"
+      },
+      {
+        "sq": "fjala7",
+        "pl": "pl7",
+        "es": "es7",
+        "img": "img/market.png"
+      },
+      {
+        "sq": "fjala8",
+        "pl": "pl8",
+        "es": "es8",
+        "img": "img/market.png"
+      },
+      {
+        "sq": "fjala9",
+        "pl": "pl9",
+        "es": "es9",
+        "img": "img/market.png"
+      },
+      {
+        "sq": "fjala10",
+        "pl": "pl10",
+        "es": "es10",
+        "img": "img/market.png"
+      },
+      {
+        "sq": "fjala11",
+        "pl": "pl11",
+        "es": "es11",
+        "img": "img/market.png"
+      },
+      {
+        "sq": "fjala12",
+        "pl": "pl12",
+        "es": "es12",
+        "img": "img/market.png"
+      },
+      {
+        "sq": "fjala13",
+        "pl": "pl13",
+        "es": "es13",
+        "img": "img/market.png"
+      },
+      {
+        "sq": "fjala14",
+        "pl": "pl14",
+        "es": "es14",
+        "img": "img/market.png"
+      },
+      {
+        "sq": "fjala15",
+        "pl": "pl15",
+        "es": "es15",
+        "img": "img/market.png"
+      },
+      {
+        "sq": "fjala16",
+        "pl": "pl16",
+        "es": "es16",
+        "img": "img/market.png"
+      },
+      {
+        "sq": "fjala17",
+        "pl": "pl17",
+        "es": "es17",
+        "img": "img/market.png"
+      },
+      {
+        "sq": "fjala18",
+        "pl": "pl18",
+        "es": "es18",
+        "img": "img/market.png"
+      },
+      {
+        "sq": "fjala19",
+        "pl": "pl19",
+        "es": "es19",
+        "img": "img/market.png"
+      },
+      {
+        "sq": "fjala20",
+        "pl": "pl20",
+        "es": "es20",
+        "img": "img/market.png"
+      },
+      {
+        "sq": "fjala21",
+        "pl": "pl21",
+        "es": "es21",
+        "img": "img/market.png"
+      },
+      {
+        "sq": "fjala22",
+        "pl": "pl22",
+        "es": "es22",
+        "img": "img/market.png"
+      },
+      {
+        "sq": "fjala23",
+        "pl": "pl23",
+        "es": "es23",
+        "img": "img/market.png"
+      },
+      {
+        "sq": "fjala24",
+        "pl": "pl24",
+        "es": "es24",
+        "img": "img/market.png"
+      },
+      {
+        "sq": "fjala25",
+        "pl": "pl25",
+        "es": "es25",
+        "img": "img/market.png"
+      },
+      {
+        "sq": "fjala26",
+        "pl": "pl26",
+        "es": "es26",
+        "img": "img/market.png"
+      },
+      {
+        "sq": "fjala27",
+        "pl": "pl27",
+        "es": "es27",
+        "img": "img/market.png"
+      },
+      {
+        "sq": "fjala28",
+        "pl": "pl28",
+        "es": "es28",
+        "img": "img/market.png"
+      },
+      {
+        "sq": "fjala29",
+        "pl": "pl29",
+        "es": "es29",
+        "img": "img/market.png"
+      },
+      {
+        "sq": "fjala30",
+        "pl": "pl30",
+        "es": "es30",
+        "img": "img/market.png"
+      },
+      {
+        "sq": "fjala31",
+        "pl": "pl31",
+        "es": "es31",
+        "img": "img/market.png"
+      },
+      {
+        "sq": "fjala32",
+        "pl": "pl32",
+        "es": "es32",
+        "img": "img/market.png"
+      },
+      {
+        "sq": "fjala33",
+        "pl": "pl33",
+        "es": "es33",
+        "img": "img/market.png"
+      },
+      {
+        "sq": "fjala34",
+        "pl": "pl34",
+        "es": "es34",
+        "img": "img/market.png"
+      },
+      {
+        "sq": "fjala35",
+        "pl": "pl35",
+        "es": "es35",
+        "img": "img/market.png"
+      },
+      {
+        "sq": "fjala36",
+        "pl": "pl36",
+        "es": "es36",
+        "img": "img/market.png"
+      },
+      {
+        "sq": "fjala37",
+        "pl": "pl37",
+        "es": "es37",
+        "img": "img/market.png"
+      },
+      {
+        "sq": "fjala38",
+        "pl": "pl38",
+        "es": "es38",
+        "img": "img/market.png"
+      },
+      {
+        "sq": "fjala39",
+        "pl": "pl39",
+        "es": "es39",
+        "img": "img/market.png"
+      },
+      {
+        "sq": "fjala40",
+        "pl": "pl40",
+        "es": "es40",
+        "img": "img/market.png"
+      },
+      {
+        "sq": "fjala41",
+        "pl": "pl41",
+        "es": "es41",
+        "img": "img/market.png"
+      },
+      {
+        "sq": "fjala42",
+        "pl": "pl42",
+        "es": "es42",
+        "img": "img/market.png"
+      },
+      {
+        "sq": "fjala43",
+        "pl": "pl43",
+        "es": "es43",
+        "img": "img/market.png"
+      },
+      {
+        "sq": "fjala44",
+        "pl": "pl44",
+        "es": "es44",
+        "img": "img/market.png"
+      },
+      {
+        "sq": "fjala45",
+        "pl": "pl45",
+        "es": "es45",
+        "img": "img/market.png"
+      },
+      {
+        "sq": "fjala46",
+        "pl": "pl46",
+        "es": "es46",
+        "img": "img/market.png"
+      },
+      {
+        "sq": "fjala47",
+        "pl": "pl47",
+        "es": "es47",
+        "img": "img/market.png"
+      },
+      {
+        "sq": "fjala48",
+        "pl": "pl48",
+        "es": "es48",
+        "img": "img/market.png"
+      },
+      {
+        "sq": "fjala49",
+        "pl": "pl49",
+        "es": "es49",
+        "img": "img/market.png"
+      },
+      {
+        "sq": "fjala50",
+        "pl": "pl50",
+        "es": "es50",
+        "img": "img/market.png"
+      },
+      {
+        "sq": "fjala51",
+        "pl": "pl51",
+        "es": "es51",
+        "img": "img/market.png"
+      },
+      {
+        "sq": "fjala52",
+        "pl": "pl52",
+        "es": "es52",
+        "img": "img/market.png"
+      },
+      {
+        "sq": "fjala53",
+        "pl": "pl53",
+        "es": "es53",
+        "img": "img/market.png"
+      },
+      {
+        "sq": "fjala54",
+        "pl": "pl54",
+        "es": "es54",
+        "img": "img/market.png"
+      },
+      {
+        "sq": "fjala55",
+        "pl": "pl55",
+        "es": "es55",
+        "img": "img/market.png"
+      },
+      {
+        "sq": "fjala56",
+        "pl": "pl56",
+        "es": "es56",
+        "img": "img/market.png"
+      },
+      {
+        "sq": "fjala57",
+        "pl": "pl57",
+        "es": "es57",
+        "img": "img/market.png"
+      },
+      {
+        "sq": "fjala58",
+        "pl": "pl58",
+        "es": "es58",
+        "img": "img/market.png"
+      },
+      {
+        "sq": "fjala59",
+        "pl": "pl59",
+        "es": "es59",
+        "img": "img/market.png"
+      },
+      {
+        "sq": "fjala60",
+        "pl": "pl60",
+        "es": "es60",
+        "img": "img/market.png"
+      }
+    ],
+    "phrases": [
+      {
+        "sq": "A mund të ndihmoni?",
+        "pl": "Czy możesz pomóc?",
+        "es": "¿Puedes ayudar?"
+      },
+      {
+        "sq": "Më pëlqen ky vend",
+        "pl": "Podoba mi się to miejsce",
+        "es": "Me gusta este lugar"
+      },
+      {
+        "sq": "Sa është ora?",
+        "pl": "Która jest godzina?",
+        "es": "¿Qué hora es?"
+      }
+    ],
+    "themes": [
+      {
+        "id": "compras",
+        "name": "Compras",
+        "img": "img/market.png"
+      },
+      {
+        "id": "rutina",
+        "name": "Rutina",
+        "img": "img/people.png"
+      }
+    ]
+  },
+  "B2": {
+    "words": [
+      {
+        "sq": "fjala1",
+        "pl": "pl1",
+        "es": "es1",
+        "img": "img/study.png"
+      },
+      {
+        "sq": "fjala2",
+        "pl": "pl2",
+        "es": "es2",
+        "img": "img/study.png"
+      },
+      {
+        "sq": "fjala3",
+        "pl": "pl3",
+        "es": "es3",
+        "img": "img/study.png"
+      },
+      {
+        "sq": "fjala4",
+        "pl": "pl4",
+        "es": "es4",
+        "img": "img/study.png"
+      },
+      {
+        "sq": "fjala5",
+        "pl": "pl5",
+        "es": "es5",
+        "img": "img/study.png"
+      },
+      {
+        "sq": "fjala6",
+        "pl": "pl6",
+        "es": "es6",
+        "img": "img/study.png"
+      },
+      {
+        "sq": "fjala7",
+        "pl": "pl7",
+        "es": "es7",
+        "img": "img/study.png"
+      },
+      {
+        "sq": "fjala8",
+        "pl": "pl8",
+        "es": "es8",
+        "img": "img/study.png"
+      },
+      {
+        "sq": "fjala9",
+        "pl": "pl9",
+        "es": "es9",
+        "img": "img/study.png"
+      },
+      {
+        "sq": "fjala10",
+        "pl": "pl10",
+        "es": "es10",
+        "img": "img/study.png"
+      },
+      {
+        "sq": "fjala11",
+        "pl": "pl11",
+        "es": "es11",
+        "img": "img/study.png"
+      },
+      {
+        "sq": "fjala12",
+        "pl": "pl12",
+        "es": "es12",
+        "img": "img/study.png"
+      },
+      {
+        "sq": "fjala13",
+        "pl": "pl13",
+        "es": "es13",
+        "img": "img/study.png"
+      },
+      {
+        "sq": "fjala14",
+        "pl": "pl14",
+        "es": "es14",
+        "img": "img/study.png"
+      },
+      {
+        "sq": "fjala15",
+        "pl": "pl15",
+        "es": "es15",
+        "img": "img/study.png"
+      },
+      {
+        "sq": "fjala16",
+        "pl": "pl16",
+        "es": "es16",
+        "img": "img/study.png"
+      },
+      {
+        "sq": "fjala17",
+        "pl": "pl17",
+        "es": "es17",
+        "img": "img/study.png"
+      },
+      {
+        "sq": "fjala18",
+        "pl": "pl18",
+        "es": "es18",
+        "img": "img/study.png"
+      },
+      {
+        "sq": "fjala19",
+        "pl": "pl19",
+        "es": "es19",
+        "img": "img/study.png"
+      },
+      {
+        "sq": "fjala20",
+        "pl": "pl20",
+        "es": "es20",
+        "img": "img/study.png"
+      },
+      {
+        "sq": "fjala21",
+        "pl": "pl21",
+        "es": "es21",
+        "img": "img/study.png"
+      },
+      {
+        "sq": "fjala22",
+        "pl": "pl22",
+        "es": "es22",
+        "img": "img/study.png"
+      },
+      {
+        "sq": "fjala23",
+        "pl": "pl23",
+        "es": "es23",
+        "img": "img/study.png"
+      },
+      {
+        "sq": "fjala24",
+        "pl": "pl24",
+        "es": "es24",
+        "img": "img/study.png"
+      },
+      {
+        "sq": "fjala25",
+        "pl": "pl25",
+        "es": "es25",
+        "img": "img/study.png"
+      },
+      {
+        "sq": "fjala26",
+        "pl": "pl26",
+        "es": "es26",
+        "img": "img/study.png"
+      },
+      {
+        "sq": "fjala27",
+        "pl": "pl27",
+        "es": "es27",
+        "img": "img/study.png"
+      },
+      {
+        "sq": "fjala28",
+        "pl": "pl28",
+        "es": "es28",
+        "img": "img/study.png"
+      },
+      {
+        "sq": "fjala29",
+        "pl": "pl29",
+        "es": "es29",
+        "img": "img/study.png"
+      },
+      {
+        "sq": "fjala30",
+        "pl": "pl30",
+        "es": "es30",
+        "img": "img/study.png"
+      },
+      {
+        "sq": "fjala31",
+        "pl": "pl31",
+        "es": "es31",
+        "img": "img/study.png"
+      },
+      {
+        "sq": "fjala32",
+        "pl": "pl32",
+        "es": "es32",
+        "img": "img/study.png"
+      },
+      {
+        "sq": "fjala33",
+        "pl": "pl33",
+        "es": "es33",
+        "img": "img/study.png"
+      },
+      {
+        "sq": "fjala34",
+        "pl": "pl34",
+        "es": "es34",
+        "img": "img/study.png"
+      },
+      {
+        "sq": "fjala35",
+        "pl": "pl35",
+        "es": "es35",
+        "img": "img/study.png"
+      },
+      {
+        "sq": "fjala36",
+        "pl": "pl36",
+        "es": "es36",
+        "img": "img/study.png"
+      },
+      {
+        "sq": "fjala37",
+        "pl": "pl37",
+        "es": "es37",
+        "img": "img/study.png"
+      },
+      {
+        "sq": "fjala38",
+        "pl": "pl38",
+        "es": "es38",
+        "img": "img/study.png"
+      },
+      {
+        "sq": "fjala39",
+        "pl": "pl39",
+        "es": "es39",
+        "img": "img/study.png"
+      },
+      {
+        "sq": "fjala40",
+        "pl": "pl40",
+        "es": "es40",
+        "img": "img/study.png"
+      },
+      {
+        "sq": "fjala41",
+        "pl": "pl41",
+        "es": "es41",
+        "img": "img/study.png"
+      },
+      {
+        "sq": "fjala42",
+        "pl": "pl42",
+        "es": "es42",
+        "img": "img/study.png"
+      },
+      {
+        "sq": "fjala43",
+        "pl": "pl43",
+        "es": "es43",
+        "img": "img/study.png"
+      },
+      {
+        "sq": "fjala44",
+        "pl": "pl44",
+        "es": "es44",
+        "img": "img/study.png"
+      },
+      {
+        "sq": "fjala45",
+        "pl": "pl45",
+        "es": "es45",
+        "img": "img/study.png"
+      },
+      {
+        "sq": "fjala46",
+        "pl": "pl46",
+        "es": "es46",
+        "img": "img/study.png"
+      },
+      {
+        "sq": "fjala47",
+        "pl": "pl47",
+        "es": "es47",
+        "img": "img/study.png"
+      },
+      {
+        "sq": "fjala48",
+        "pl": "pl48",
+        "es": "es48",
+        "img": "img/study.png"
+      },
+      {
+        "sq": "fjala49",
+        "pl": "pl49",
+        "es": "es49",
+        "img": "img/study.png"
+      },
+      {
+        "sq": "fjala50",
+        "pl": "pl50",
+        "es": "es50",
+        "img": "img/study.png"
+      },
+      {
+        "sq": "fjala51",
+        "pl": "pl51",
+        "es": "es51",
+        "img": "img/study.png"
+      },
+      {
+        "sq": "fjala52",
+        "pl": "pl52",
+        "es": "es52",
+        "img": "img/study.png"
+      },
+      {
+        "sq": "fjala53",
+        "pl": "pl53",
+        "es": "es53",
+        "img": "img/study.png"
+      },
+      {
+        "sq": "fjala54",
+        "pl": "pl54",
+        "es": "es54",
+        "img": "img/study.png"
+      },
+      {
+        "sq": "fjala55",
+        "pl": "pl55",
+        "es": "es55",
+        "img": "img/study.png"
+      },
+      {
+        "sq": "fjala56",
+        "pl": "pl56",
+        "es": "es56",
+        "img": "img/study.png"
+      },
+      {
+        "sq": "fjala57",
+        "pl": "pl57",
+        "es": "es57",
+        "img": "img/study.png"
+      },
+      {
+        "sq": "fjala58",
+        "pl": "pl58",
+        "es": "es58",
+        "img": "img/study.png"
+      },
+      {
+        "sq": "fjala59",
+        "pl": "pl59",
+        "es": "es59",
+        "img": "img/study.png"
+      },
+      {
+        "sq": "fjala60",
+        "pl": "pl60",
+        "es": "es60",
+        "img": "img/study.png"
+      }
+    ],
+    "phrases": [
+      {
+        "sq": "Do të doja një tavolinë për dy",
+        "pl": "Poproszę stolik dla dwóch",
+        "es": "Quisiera una mesa para dos"
+      },
+      {
+        "sq": "A mund të më dërgoni email-in?",
+        "pl": "Czy możesz wysłać mi e-mail?",
+        "es": "¿Puedes enviarme el correo?"
+      }
+    ],
+    "themes": [
+      {
+        "id": "trabajo",
+        "name": "Trabajo",
+        "img": "img/study.png"
+      },
+      {
+        "id": "servicios",
+        "name": "Servicios",
+        "img": "img/market.png"
+      }
+    ]
+  },
+  "C1": {
+    "words": [
+      {
+        "sq": "fjala1",
+        "pl": "pl1",
+        "es": "es1",
+        "img": "img/travel.png"
+      },
+      {
+        "sq": "fjala2",
+        "pl": "pl2",
+        "es": "es2",
+        "img": "img/travel.png"
+      },
+      {
+        "sq": "fjala3",
+        "pl": "pl3",
+        "es": "es3",
+        "img": "img/travel.png"
+      },
+      {
+        "sq": "fjala4",
+        "pl": "pl4",
+        "es": "es4",
+        "img": "img/travel.png"
+      },
+      {
+        "sq": "fjala5",
+        "pl": "pl5",
+        "es": "es5",
+        "img": "img/travel.png"
+      },
+      {
+        "sq": "fjala6",
+        "pl": "pl6",
+        "es": "es6",
+        "img": "img/travel.png"
+      },
+      {
+        "sq": "fjala7",
+        "pl": "pl7",
+        "es": "es7",
+        "img": "img/travel.png"
+      },
+      {
+        "sq": "fjala8",
+        "pl": "pl8",
+        "es": "es8",
+        "img": "img/travel.png"
+      },
+      {
+        "sq": "fjala9",
+        "pl": "pl9",
+        "es": "es9",
+        "img": "img/travel.png"
+      },
+      {
+        "sq": "fjala10",
+        "pl": "pl10",
+        "es": "es10",
+        "img": "img/travel.png"
+      },
+      {
+        "sq": "fjala11",
+        "pl": "pl11",
+        "es": "es11",
+        "img": "img/travel.png"
+      },
+      {
+        "sq": "fjala12",
+        "pl": "pl12",
+        "es": "es12",
+        "img": "img/travel.png"
+      },
+      {
+        "sq": "fjala13",
+        "pl": "pl13",
+        "es": "es13",
+        "img": "img/travel.png"
+      },
+      {
+        "sq": "fjala14",
+        "pl": "pl14",
+        "es": "es14",
+        "img": "img/travel.png"
+      },
+      {
+        "sq": "fjala15",
+        "pl": "pl15",
+        "es": "es15",
+        "img": "img/travel.png"
+      },
+      {
+        "sq": "fjala16",
+        "pl": "pl16",
+        "es": "es16",
+        "img": "img/travel.png"
+      },
+      {
+        "sq": "fjala17",
+        "pl": "pl17",
+        "es": "es17",
+        "img": "img/travel.png"
+      },
+      {
+        "sq": "fjala18",
+        "pl": "pl18",
+        "es": "es18",
+        "img": "img/travel.png"
+      },
+      {
+        "sq": "fjala19",
+        "pl": "pl19",
+        "es": "es19",
+        "img": "img/travel.png"
+      },
+      {
+        "sq": "fjala20",
+        "pl": "pl20",
+        "es": "es20",
+        "img": "img/travel.png"
+      },
+      {
+        "sq": "fjala21",
+        "pl": "pl21",
+        "es": "es21",
+        "img": "img/travel.png"
+      },
+      {
+        "sq": "fjala22",
+        "pl": "pl22",
+        "es": "es22",
+        "img": "img/travel.png"
+      },
+      {
+        "sq": "fjala23",
+        "pl": "pl23",
+        "es": "es23",
+        "img": "img/travel.png"
+      },
+      {
+        "sq": "fjala24",
+        "pl": "pl24",
+        "es": "es24",
+        "img": "img/travel.png"
+      },
+      {
+        "sq": "fjala25",
+        "pl": "pl25",
+        "es": "es25",
+        "img": "img/travel.png"
+      },
+      {
+        "sq": "fjala26",
+        "pl": "pl26",
+        "es": "es26",
+        "img": "img/travel.png"
+      },
+      {
+        "sq": "fjala27",
+        "pl": "pl27",
+        "es": "es27",
+        "img": "img/travel.png"
+      },
+      {
+        "sq": "fjala28",
+        "pl": "pl28",
+        "es": "es28",
+        "img": "img/travel.png"
+      },
+      {
+        "sq": "fjala29",
+        "pl": "pl29",
+        "es": "es29",
+        "img": "img/travel.png"
+      },
+      {
+        "sq": "fjala30",
+        "pl": "pl30",
+        "es": "es30",
+        "img": "img/travel.png"
+      },
+      {
+        "sq": "fjala31",
+        "pl": "pl31",
+        "es": "es31",
+        "img": "img/travel.png"
+      },
+      {
+        "sq": "fjala32",
+        "pl": "pl32",
+        "es": "es32",
+        "img": "img/travel.png"
+      },
+      {
+        "sq": "fjala33",
+        "pl": "pl33",
+        "es": "es33",
+        "img": "img/travel.png"
+      },
+      {
+        "sq": "fjala34",
+        "pl": "pl34",
+        "es": "es34",
+        "img": "img/travel.png"
+      },
+      {
+        "sq": "fjala35",
+        "pl": "pl35",
+        "es": "es35",
+        "img": "img/travel.png"
+      },
+      {
+        "sq": "fjala36",
+        "pl": "pl36",
+        "es": "es36",
+        "img": "img/travel.png"
+      },
+      {
+        "sq": "fjala37",
+        "pl": "pl37",
+        "es": "es37",
+        "img": "img/travel.png"
+      },
+      {
+        "sq": "fjala38",
+        "pl": "pl38",
+        "es": "es38",
+        "img": "img/travel.png"
+      },
+      {
+        "sq": "fjala39",
+        "pl": "pl39",
+        "es": "es39",
+        "img": "img/travel.png"
+      },
+      {
+        "sq": "fjala40",
+        "pl": "pl40",
+        "es": "es40",
+        "img": "img/travel.png"
+      },
+      {
+        "sq": "fjala41",
+        "pl": "pl41",
+        "es": "es41",
+        "img": "img/travel.png"
+      },
+      {
+        "sq": "fjala42",
+        "pl": "pl42",
+        "es": "es42",
+        "img": "img/travel.png"
+      },
+      {
+        "sq": "fjala43",
+        "pl": "pl43",
+        "es": "es43",
+        "img": "img/travel.png"
+      },
+      {
+        "sq": "fjala44",
+        "pl": "pl44",
+        "es": "es44",
+        "img": "img/travel.png"
+      },
+      {
+        "sq": "fjala45",
+        "pl": "pl45",
+        "es": "es45",
+        "img": "img/travel.png"
+      },
+      {
+        "sq": "fjala46",
+        "pl": "pl46",
+        "es": "es46",
+        "img": "img/travel.png"
+      },
+      {
+        "sq": "fjala47",
+        "pl": "pl47",
+        "es": "es47",
+        "img": "img/travel.png"
+      },
+      {
+        "sq": "fjala48",
+        "pl": "pl48",
+        "es": "es48",
+        "img": "img/travel.png"
+      },
+      {
+        "sq": "fjala49",
+        "pl": "pl49",
+        "es": "es49",
+        "img": "img/travel.png"
+      },
+      {
+        "sq": "fjala50",
+        "pl": "pl50",
+        "es": "es50",
+        "img": "img/travel.png"
+      },
+      {
+        "sq": "fjala51",
+        "pl": "pl51",
+        "es": "es51",
+        "img": "img/travel.png"
+      },
+      {
+        "sq": "fjala52",
+        "pl": "pl52",
+        "es": "es52",
+        "img": "img/travel.png"
+      },
+      {
+        "sq": "fjala53",
+        "pl": "pl53",
+        "es": "es53",
+        "img": "img/travel.png"
+      },
+      {
+        "sq": "fjala54",
+        "pl": "pl54",
+        "es": "es54",
+        "img": "img/travel.png"
+      },
+      {
+        "sq": "fjala55",
+        "pl": "pl55",
+        "es": "es55",
+        "img": "img/travel.png"
+      },
+      {
+        "sq": "fjala56",
+        "pl": "pl56",
+        "es": "es56",
+        "img": "img/travel.png"
+      },
+      {
+        "sq": "fjala57",
+        "pl": "pl57",
+        "es": "es57",
+        "img": "img/travel.png"
+      },
+      {
+        "sq": "fjala58",
+        "pl": "pl58",
+        "es": "es58",
+        "img": "img/travel.png"
+      },
+      {
+        "sq": "fjala59",
+        "pl": "pl59",
+        "es": "es59",
+        "img": "img/travel.png"
+      },
+      {
+        "sq": "fjala60",
+        "pl": "pl60",
+        "es": "es60",
+        "img": "img/travel.png"
+      }
+    ],
+    "phrases": [
+      {
+        "sq": "Mendoj se kjo qasje është e qëndrueshme",
+        "pl": "Uważam, że to podejście jest zrównoważone",
+        "es": "Creo que este enfoque es sostenible"
+      },
+      {
+        "sq": "Dëshiroj të diskutojmë alternativat",
+        "pl": "Chcę omówić alternatywy",
+        "es": "Deseo que discutamos las alternativas"
+      }
+    ],
+    "themes": [
+      {
+        "id": "debate",
+        "name": "Debate",
+        "img": "img/study.png"
+      },
+      {
+        "id": "cultura",
+        "name": "Cultura",
+        "img": "img/people.png"
+      }
+    ]
+  }
+}

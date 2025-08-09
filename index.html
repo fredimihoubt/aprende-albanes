@@ -3,162 +3,97 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Aprende Albanés • SQ–PL–ES</title>
-  <meta name="description" content="Aprende albanés con apoyo en polaco y español. Vocabulario en paralelo, plan semanal, recompensas y minijuegos estilo Sims." />
+  <title>Albanés Pro — A1–C1</title>
+  <meta name="description" content="Curso de albanés por niveles A1–C1 con ejercicios visuales, minitests, flashcards, monedas y recompensas." />
   <link rel="manifest" href="manifest.webmanifest" />
   <link rel="stylesheet" href="styles.css" />
   <link rel="icon" href="img/icon-192.png" />
-  <meta name="theme-color" content="#f6f7fb" />
-  <!-- Phaser 3 CDN -->
-  <script defer src="https://cdn.jsdelivr.net/npm/phaser@3.80.1/dist/phaser.min.js"></script>
+  <meta name="theme-color" content="#0ea5e9" />
   <script defer src="app.js"></script>
-  <script defer src="games/game.js"></script>
 </head>
 <body>
   <header class="app-header">
-    <h1>Aprende Albanés</h1>
+    <div class="brand">
+      <h1>Albanés Pro</h1>
+      <span class="badge">A1–C1</span>
+    </div>
     <nav class="navbar">
-      <button class="nav-btn" data-view="vocab">Vocabulario</button>
+      <button class="nav-btn" data-view="levels">Niveles</button>
+      <button class="nav-btn" data-view="practice">Práctica</button>
+      <button class="nav-btn" data-view="minitests">Mini-tests</button>
       <button class="nav-btn" data-view="flashcards">Flashcards</button>
-      <button class="nav-btn" data-view="games">Juegos</button>
-      <button class="nav-btn" data-view="plan">Plan</button>
       <button class="nav-btn" data-view="rewards">Recompensas</button>
       <button class="nav-btn" data-view="profile">Perfil</button>
-      <div class="lang-toggle">
-        <label>
-          <span>UI:</span>
-          <select id="uiLang">
-            <option value="es" selected>ES</option>
-            <option value="pl">PL</option>
-          </select>
-        </label>
-      </div>
+      <div class="coins"><span id="coinCount">0</span> 🪙</div>
     </nav>
   </header>
 
-  <main id="viewContainer">
-    <!-- VOCAB -->
-    <section id="view-vocab" class="view active">
+  <main>
+    <section id="view-levels" class="view active">
+      <h2>Selecciona nivel</h2>
+      <div id="levelGrid" class="grid"></div>
+    </section>
+
+    <section id="view-practice" class="view">
       <div class="panel">
-        <h2 id="vocabTitle">Vocabulario (SQ–PL–ES)</h2>
-        <div class="toolbar">
-          <input id="searchInput" type="search" placeholder="Buscar…" />
-          <select id="catFilter">
-            <option value="">Todas las categorías</option>
-          </select>
-          <button id="addCustomBtn">Añadir palabra/frase</button>
+        <h2>Práctica</h2>
+        <div class="tabs">
+          <button class="tab active" data-mode="image">Imágenes → Palabra</button>
+          <button class="tab" data-mode="phrase">ES/PL → Frase SQ</button>
+          <button class="tab" data-mode="builder">Constructor de frase</button>
         </div>
-        <div class="table-wrap">
-          <table id="vocabTable" class="table">
-            <thead>
-              <tr>
-                <th>Albanés</th>
-                <th>Polaco</th>
-                <th>Español</th>
-                <th>Cat.</th>
-                <th>Audio</th>
-              </tr>
-            </thead>
-            <tbody id="vocabBody"></tbody>
-          </table>
+        <div id="exerciseRoot"></div>
+        <div class="exercise-footer">
+          <div class="progress small"><div id="exProg" class="progress-bar"></div></div>
+          <button id="btnSkip" class="btn secondary">Saltar</button>
         </div>
       </div>
     </section>
 
-    <!-- FLASHCARDS -->
+    <section id="view-minitests" class="view">
+      <div class="panel">
+        <h2>Mini-tests por tema</h2>
+        <div id="testGrid" class="grid"></div>
+        <div id="testRoot"></div>
+      </div>
+    </section>
+
     <section id="view-flashcards" class="view">
       <div class="panel">
-        <h2>Flashcards (repetición espaciada)</h2>
-        <div id="flashcard" class="flashcard" tabindex="0">
-          <div id="flashFront" class="flash-face">—</div>
-          <div id="flashBack" class="flash-face">—</div>
-        </div>
-        <div class="flash-actions">
-          <button id="btnAgain">Fallé</button>
-          <button id="btnGood">Recordé</button>
-          <button id="btnSpeak">Escuchar</button>
-        </div>
-      </div>
-    </section>
-
-    <!-- GAMES -->
-    <section id="view-games" class="view">
-      <div class="panel">
-        <h2>Minijuegos</h2>
-        <div class="game-grid">
-          <div class="game-card">
-            <h3>Casa</h3>
-            <p>Arrastra la palabra al objeto correcto.</p>
-            <button class="play-btn" data-scene="HomeScene">Jugar</button>
+        <h2>Flashcards (Leitner)</h2>
+        <div class="flash-wrap">
+          <div id="flashFront" class="flash">—</div>
+          <div class="flash-actions">
+            <button id="btnShow" class="btn">Mostrar</button>
+            <button id="btnWrong" class="btn bad">Fallé</button>
+            <button id="btnRight" class="btn ok">Recordé</button>
+            <button id="btnAudio" class="btn secondary">Audio</button>
           </div>
-          <div class="game-card">
-            <h3>Mercado</h3>
-            <p>Elige la frase correcta para comprar.</p>
-            <button class="play-btn" data-scene="MarketScene">Jugar</button>
-          </div>
-          <div class="game-card">
-            <h3>Restaurante</h3>
-            <p>Construye la frase para pedir comida.</p>
-            <button class="play-btn" data-scene="RestaurantScene">Jugar</button>
-          </div>
-        </div>
-        <div id="gameMount" class="game-mount" aria-label="Zona de juego"></div>
-      </div>
-    </section>
-
-    <!-- PLAN -->
-    <section id="view-plan" class="view">
-      <div class="panel">
-        <h2>Plan semanal (3 h)</h2>
-        <ol id="planList" class="plan-list"></ol>
-        <div class="progress-wrap">
-          <label>Progreso semanal</label>
-          <div class="progress">
-            <div id="progressBar" class="progress-bar" style="width:0%"></div>
-          </div>
+          <div class="muted" id="flashInfo"></div>
         </div>
       </div>
     </section>
 
-    <!-- REWARDS -->
     <section id="view-rewards" class="view">
       <div class="panel">
         <h2>Recompensas</h2>
-        <ul id="rewardsList" class="rewards-list"></ul>
+        <p>Canjea monedas por premios.</p>
+        <ul id="rewardShop" class="shop"></ul>
         <h3>Historial</h3>
-        <ul id="rewardsHistory" class="history-list"></ul>
+        <ul id="rewardHistory" class="history-list"></ul>
       </div>
     </section>
 
-    <!-- PROFILE -->
     <section id="view-profile" class="view">
       <div class="panel">
         <h2>Perfil</h2>
-        <button id="btnExport">Exportar progreso</button>
+        <p>Nivel activo: <strong id="activeLevel">A1</strong></p>
+        <button id="btnExport" class="btn">Exportar progreso</button>
         <input type="file" id="fileImport" accept="application/json" />
-        <label class="switch">
-          <input type="checkbox" id="pwaInstallHint" checked />
-          <span>Mostrar guía de instalación como App (PWA)</span>
-        </label>
-        <p class="muted">Consejo: añade esta web a la pantalla de inicio para usarla como app.</p>
+        <p class="muted">Añade esta web a tu pantalla de inicio para usarla como App.</p>
       </div>
     </section>
   </main>
-
-  <!-- Modal añadir personalizado -->
-  <dialog id="customDialog">
-    <form method="dialog" class="dialog-form">
-      <h3>Añadir entrada</h3>
-      <label>Albanés (SQ) <input id="sqInput" required /></label>
-      <label>Polaco (PL) <input id="plInput" required /></label>
-      <label>Español (ES) <input id="esInput" required /></label>
-      <label>Categoría <input id="catInput" placeholder="ej. saludos" /></label>
-      <menu>
-        <button value="cancel">Cancelar</button>
-        <button id="saveCustom" value="default">Guardar</button>
-      </menu>
-    </form>
-  </dialog>
 
   <div id="toast" class="toast" role="status" aria-live="polite"></div>
 

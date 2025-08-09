@@ -1,0 +1,501 @@
+level,type,category,sq,pl,es,img,note
+A1,word,saludos,pershendetje,cześć,hola,img/people.png,
+A1,word,saludos,mirëdita,dzień dobry,buenos días,img/people.png,
+A1,word,saludos,mirëmbrëma,dobry wieczór,buenas noches,img/people.png,
+A1,word,cortesía,faleminderit,dziękuję,gracias,img/people.png,
+A1,word,cortesía,ju lutem,proszę,por favor,img/people.png,
+A1,word,básico,po,tak,sí,img/people.png,
+A1,word,básico,jo,nie,no,img/people.png,
+A1,word,comida,bukë,chleb,pan,img/food.png,
+A1,word,comida,mollë,jabłko,manzana,img/food.png,
+A1,word,comida,ujë,woda,agua,img/food.png,
+A1,word,comida,kafe,kawa,café,img/food.png,
+A1,word,comida,djathë,ser,queso,img/food.png,
+A1,word,familia,familja,rodzina,familia,img/people.png,
+A1,word,personas,mik,przyjaciel,amigo,img/people.png,
+A1,word,personas,mike,przyjaciółka,amiga,img/people.png,
+A1,word,hogar,shtepia,dom,casa,img/house.png,
+A1,word,hogar,dritare,okno,ventana,img/house.png,
+A1,word,hogar,derë,drzwi,puerta,img/house.png,
+A1,word,lugares,treg,targ,mercado,img/market.png,
+A1,word,lugares,restorant,restauracja,restaurante,img/market.png,
+A1,word,viaje,biletë,bilet,billete,img/travel.png,
+A1,word,viaje,autobus,autobus,autobús,img/travel.png,
+A1,word,viaje,tren,pociąg,tren,img/travel.png,
+A1,word,viaje,avion,samolot,avión,img/travel.png,
+A1,phrase,saludos,Si je?,Jak się masz?,¿Cómo estás?,,
+A1,phrase,saludos,Unë jam mirë,Mam się dobrze,Estoy bien,,
+A1,phrase,restaurante,"Dua një kafe, ju lutem",Poproszę kawę,"Quiero un café, por favor",,
+A1,phrase,viaje,Ku është tualeti?,Gdzie jest toaleta?,¿Dónde está el baño?,,
+A1,phrase,cortesía,Faleminderit shumë,Dziękuję bardzo,Muchas gracias,,
+A1,phrase,compras,Sa kushton kjo?,Ile to kosztuje?,¿Cuánto cuesta esto?,,
+A1,phrase,compras,Ku mund të blej bukë?,Gdzie mogę kupić chleb?,¿Dónde puedo comprar pan?,,
+A1,phrase,cortesía,Më fal,Przepraszam,Perdón,,
+A1,phrase,saludos,Shihemi më vonë,Do zobaczenia później,Nos vemos luego,,
+A1,phrase,saludos,Mirupafshim,Do widzenia,Adiós,,
+A1,word,familia,fjala1,pl_słowo1,palabra1,img/people.png,PLACEHOLDER: revisar y reemplazar
+A1,word,viaje,fjala2,pl_słowo2,palabra2,img/travel.png,PLACEHOLDER: revisar y reemplazar
+A1,phrase,compras,Fraza e testit 3,Przykładowe zdanie 3,Frase de ejemplo 3,,PLACEHOLDER: revisar y reemplazar
+A1,word,números,fjala4,pl_słowo4,palabra4,img/study.png,PLACEHOLDER: revisar y reemplazar
+A1,word,tiempo,fjala5,pl_słowo5,palabra5,img/study.png,PLACEHOLDER: revisar y reemplazar
+A1,word,viaje,fjala6,pl_słowo6,palabra6,img/travel.png,PLACEHOLDER: revisar y reemplazar
+A1,phrase,hogar,Fraza e testit 7,Przykładowe zdanie 7,Frase de ejemplo 7,,PLACEHOLDER: revisar y reemplazar
+A1,phrase,trabajo,Fraza e testit 8,Przykładowe zdanie 8,Frase de ejemplo 8,,PLACEHOLDER: revisar y reemplazar
+A1,word,comida,fjala9,pl_słowo9,palabra9,img/food.png,PLACEHOLDER: revisar y reemplazar
+A1,word,colores,fjala10,pl_słowo10,palabra10,img/study.png,PLACEHOLDER: revisar y reemplazar
+A1,word,cuerpo,fjala11,pl_słowo11,palabra11,img/people.png,PLACEHOLDER: revisar y reemplazar
+A1,word,compras,fjala12,pl_słowo12,palabra12,img/market.png,PLACEHOLDER: revisar y reemplazar
+A1,phrase,cuerpo,Fraza e testit 13,Przykładowe zdanie 13,Frase de ejemplo 13,,PLACEHOLDER: revisar y reemplazar
+A1,phrase,colores,Fraza e testit 14,Przykładowe zdanie 14,Frase de ejemplo 14,,PLACEHOLDER: revisar y reemplazar
+A1,word,hogar,fjala15,pl_słowo15,palabra15,img/house.png,PLACEHOLDER: revisar y reemplazar
+A1,phrase,trabajo,Fraza e testit 16,Przykładowe zdanie 16,Frase de ejemplo 16,,PLACEHOLDER: revisar y reemplazar
+A1,phrase,hogar,Fraza e testit 17,Przykładowe zdanie 17,Frase de ejemplo 17,,PLACEHOLDER: revisar y reemplazar
+A1,phrase,viaje,Fraza e testit 18,Przykładowe zdanie 18,Frase de ejemplo 18,,PLACEHOLDER: revisar y reemplazar
+A1,word,comida,fjala19,pl_słowo19,palabra19,img/food.png,PLACEHOLDER: revisar y reemplazar
+A1,word,comida,fjala20,pl_słowo20,palabra20,img/food.png,PLACEHOLDER: revisar y reemplazar
+A1,word,hogar,fjala21,pl_słowo21,palabra21,img/house.png,PLACEHOLDER: revisar y reemplazar
+A1,phrase,tiempo,Fraza e testit 22,Przykładowe zdanie 22,Frase de ejemplo 22,,PLACEHOLDER: revisar y reemplazar
+A1,phrase,viaje,Fraza e testit 23,Przykładowe zdanie 23,Frase de ejemplo 23,,PLACEHOLDER: revisar y reemplazar
+A1,word,viaje,fjala24,pl_słowo24,palabra24,img/travel.png,PLACEHOLDER: revisar y reemplazar
+A1,phrase,números,Fraza e testit 25,Przykładowe zdanie 25,Frase de ejemplo 25,,PLACEHOLDER: revisar y reemplazar
+A1,word,compras,fjala26,pl_słowo26,palabra26,img/market.png,PLACEHOLDER: revisar y reemplazar
+A1,word,números,fjala27,pl_słowo27,palabra27,img/study.png,PLACEHOLDER: revisar y reemplazar
+A1,phrase,tiempo,Fraza e testit 28,Przykładowe zdanie 28,Frase de ejemplo 28,,PLACEHOLDER: revisar y reemplazar
+A1,word,números,fjala29,pl_słowo29,palabra29,img/study.png,PLACEHOLDER: revisar y reemplazar
+A1,word,números,fjala30,pl_słowo30,palabra30,img/study.png,PLACEHOLDER: revisar y reemplazar
+A1,phrase,compras,Fraza e testit 31,Przykładowe zdanie 31,Frase de ejemplo 31,,PLACEHOLDER: revisar y reemplazar
+A1,word,viaje,fjala32,pl_słowo32,palabra32,img/travel.png,PLACEHOLDER: revisar y reemplazar
+A1,word,colores,fjala33,pl_słowo33,palabra33,img/study.png,PLACEHOLDER: revisar y reemplazar
+A1,word,hogar,fjala34,pl_słowo34,palabra34,img/house.png,PLACEHOLDER: revisar y reemplazar
+A1,phrase,familia,Fraza e testit 35,Przykładowe zdanie 35,Frase de ejemplo 35,,PLACEHOLDER: revisar y reemplazar
+A1,phrase,hogar,Fraza e testit 36,Przykładowe zdanie 36,Frase de ejemplo 36,,PLACEHOLDER: revisar y reemplazar
+A1,word,trabajo,fjala37,pl_słowo37,palabra37,img/study.png,PLACEHOLDER: revisar y reemplazar
+A1,word,tiempo,fjala38,pl_słowo38,palabra38,img/study.png,PLACEHOLDER: revisar y reemplazar
+A1,word,hogar,fjala39,pl_słowo39,palabra39,img/house.png,PLACEHOLDER: revisar y reemplazar
+A1,word,trabajo,fjala40,pl_słowo40,palabra40,img/study.png,PLACEHOLDER: revisar y reemplazar
+A1,word,hogar,fjala41,pl_słowo41,palabra41,img/house.png,PLACEHOLDER: revisar y reemplazar
+A1,word,trabajo,fjala42,pl_słowo42,palabra42,img/study.png,PLACEHOLDER: revisar y reemplazar
+A1,word,números,fjala43,pl_słowo43,palabra43,img/study.png,PLACEHOLDER: revisar y reemplazar
+A1,phrase,números,Fraza e testit 44,Przykładowe zdanie 44,Frase de ejemplo 44,,PLACEHOLDER: revisar y reemplazar
+A1,phrase,compras,Fraza e testit 45,Przykładowe zdanie 45,Frase de ejemplo 45,,PLACEHOLDER: revisar y reemplazar
+A1,word,trabajo,fjala46,pl_słowo46,palabra46,img/study.png,PLACEHOLDER: revisar y reemplazar
+A1,word,hogar,fjala47,pl_słowo47,palabra47,img/house.png,PLACEHOLDER: revisar y reemplazar
+A1,word,cuerpo,fjala48,pl_słowo48,palabra48,img/people.png,PLACEHOLDER: revisar y reemplazar
+A1,word,familia,fjala49,pl_słowo49,palabra49,img/people.png,PLACEHOLDER: revisar y reemplazar
+A1,word,trabajo,fjala50,pl_słowo50,palabra50,img/study.png,PLACEHOLDER: revisar y reemplazar
+A1,word,viaje,fjala51,pl_słowo51,palabra51,img/travel.png,PLACEHOLDER: revisar y reemplazar
+A1,word,cuerpo,fjala52,pl_słowo52,palabra52,img/people.png,PLACEHOLDER: revisar y reemplazar
+A1,phrase,familia,Fraza e testit 53,Przykładowe zdanie 53,Frase de ejemplo 53,,PLACEHOLDER: revisar y reemplazar
+A1,word,cuerpo,fjala54,pl_słowo54,palabra54,img/people.png,PLACEHOLDER: revisar y reemplazar
+A1,phrase,compras,Fraza e testit 55,Przykładowe zdanie 55,Frase de ejemplo 55,,PLACEHOLDER: revisar y reemplazar
+A1,word,colores,fjala56,pl_słowo56,palabra56,img/study.png,PLACEHOLDER: revisar y reemplazar
+A1,word,compras,fjala57,pl_słowo57,palabra57,img/market.png,PLACEHOLDER: revisar y reemplazar
+A1,phrase,viaje,Fraza e testit 58,Przykładowe zdanie 58,Frase de ejemplo 58,,PLACEHOLDER: revisar y reemplazar
+A1,word,familia,fjala59,pl_słowo59,palabra59,img/people.png,PLACEHOLDER: revisar y reemplazar
+A1,word,tiempo,fjala60,pl_słowo60,palabra60,img/study.png,PLACEHOLDER: revisar y reemplazar
+A1,word,familia,fjala61,pl_słowo61,palabra61,img/people.png,PLACEHOLDER: revisar y reemplazar
+A1,word,viaje,fjala62,pl_słowo62,palabra62,img/travel.png,PLACEHOLDER: revisar y reemplazar
+A1,word,tiempo,fjala63,pl_słowo63,palabra63,img/study.png,PLACEHOLDER: revisar y reemplazar
+A1,phrase,trabajo,Fraza e testit 64,Przykładowe zdanie 64,Frase de ejemplo 64,,PLACEHOLDER: revisar y reemplazar
+A1,word,hogar,fjala65,pl_słowo65,palabra65,img/house.png,PLACEHOLDER: revisar y reemplazar
+A1,word,hogar,fjala66,pl_słowo66,palabra66,img/house.png,PLACEHOLDER: revisar y reemplazar
+A1,word,viaje,fjala67,pl_słowo67,palabra67,img/travel.png,PLACEHOLDER: revisar y reemplazar
+A1,word,hogar,fjala68,pl_słowo68,palabra68,img/house.png,PLACEHOLDER: revisar y reemplazar
+A1,phrase,hogar,Fraza e testit 69,Przykładowe zdanie 69,Frase de ejemplo 69,,PLACEHOLDER: revisar y reemplazar
+A1,word,compras,fjala70,pl_słowo70,palabra70,img/market.png,PLACEHOLDER: revisar y reemplazar
+A1,phrase,compras,Fraza e testit 71,Przykładowe zdanie 71,Frase de ejemplo 71,,PLACEHOLDER: revisar y reemplazar
+A1,phrase,hogar,Fraza e testit 72,Przykładowe zdanie 72,Frase de ejemplo 72,,PLACEHOLDER: revisar y reemplazar
+A1,phrase,números,Fraza e testit 73,Przykładowe zdanie 73,Frase de ejemplo 73,,PLACEHOLDER: revisar y reemplazar
+A1,word,viaje,fjala74,pl_słowo74,palabra74,img/travel.png,PLACEHOLDER: revisar y reemplazar
+A1,word,compras,fjala75,pl_słowo75,palabra75,img/market.png,PLACEHOLDER: revisar y reemplazar
+A1,word,números,fjala76,pl_słowo76,palabra76,img/study.png,PLACEHOLDER: revisar y reemplazar
+A1,word,comida,fjala77,pl_słowo77,palabra77,img/food.png,PLACEHOLDER: revisar y reemplazar
+A1,phrase,trabajo,Fraza e testit 78,Przykładowe zdanie 78,Frase de ejemplo 78,,PLACEHOLDER: revisar y reemplazar
+A1,phrase,cuerpo,Fraza e testit 79,Przykładowe zdanie 79,Frase de ejemplo 79,,PLACEHOLDER: revisar y reemplazar
+A1,word,familia,fjala80,pl_słowo80,palabra80,img/people.png,PLACEHOLDER: revisar y reemplazar
+A1,word,tiempo,fjala81,pl_słowo81,palabra81,img/study.png,PLACEHOLDER: revisar y reemplazar
+A1,word,hogar,fjala82,pl_słowo82,palabra82,img/house.png,PLACEHOLDER: revisar y reemplazar
+A1,word,colores,fjala83,pl_słowo83,palabra83,img/study.png,PLACEHOLDER: revisar y reemplazar
+A1,phrase,cuerpo,Fraza e testit 84,Przykładowe zdanie 84,Frase de ejemplo 84,,PLACEHOLDER: revisar y reemplazar
+A1,word,hogar,fjala85,pl_słowo85,palabra85,img/house.png,PLACEHOLDER: revisar y reemplazar
+A1,word,viaje,fjala86,pl_słowo86,palabra86,img/travel.png,PLACEHOLDER: revisar y reemplazar
+A1,word,familia,fjala87,pl_słowo87,palabra87,img/people.png,PLACEHOLDER: revisar y reemplazar
+A1,word,hogar,fjala88,pl_słowo88,palabra88,img/house.png,PLACEHOLDER: revisar y reemplazar
+A1,word,comida,fjala89,pl_słowo89,palabra89,img/food.png,PLACEHOLDER: revisar y reemplazar
+A1,word,números,fjala90,pl_słowo90,palabra90,img/study.png,PLACEHOLDER: revisar y reemplazar
+A1,phrase,trabajo,Fraza e testit 91,Przykładowe zdanie 91,Frase de ejemplo 91,,PLACEHOLDER: revisar y reemplazar
+A1,word,comida,fjala92,pl_słowo92,palabra92,img/food.png,PLACEHOLDER: revisar y reemplazar
+A1,word,números,fjala93,pl_słowo93,palabra93,img/study.png,PLACEHOLDER: revisar y reemplazar
+A1,word,colores,fjala94,pl_słowo94,palabra94,img/study.png,PLACEHOLDER: revisar y reemplazar
+A1,word,cuerpo,fjala95,pl_słowo95,palabra95,img/people.png,PLACEHOLDER: revisar y reemplazar
+A1,word,compras,fjala96,pl_słowo96,palabra96,img/market.png,PLACEHOLDER: revisar y reemplazar
+A1,word,familia,fjala97,pl_słowo97,palabra97,img/people.png,PLACEHOLDER: revisar y reemplazar
+A1,word,colores,fjala98,pl_słowo98,palabra98,img/study.png,PLACEHOLDER: revisar y reemplazar
+A1,phrase,compras,Fraza e testit 99,Przykładowe zdanie 99,Frase de ejemplo 99,,PLACEHOLDER: revisar y reemplazar
+A1,word,viaje,fjala100,pl_słowo100,palabra100,img/travel.png,PLACEHOLDER: revisar y reemplazar
+A1,phrase,comida,Fraza e testit 101,Przykładowe zdanie 101,Frase de ejemplo 101,,PLACEHOLDER: revisar y reemplazar
+A1,phrase,compras,Fraza e testit 102,Przykładowe zdanie 102,Frase de ejemplo 102,,PLACEHOLDER: revisar y reemplazar
+A1,word,comida,fjala103,pl_słowo103,palabra103,img/food.png,PLACEHOLDER: revisar y reemplazar
+A1,phrase,cuerpo,Fraza e testit 104,Przykładowe zdanie 104,Frase de ejemplo 104,,PLACEHOLDER: revisar y reemplazar
+A1,phrase,comida,Fraza e testit 105,Przykładowe zdanie 105,Frase de ejemplo 105,,PLACEHOLDER: revisar y reemplazar
+A1,word,hogar,fjala106,pl_słowo106,palabra106,img/house.png,PLACEHOLDER: revisar y reemplazar
+A1,word,compras,fjala107,pl_słowo107,palabra107,img/market.png,PLACEHOLDER: revisar y reemplazar
+A1,phrase,hogar,Fraza e testit 108,Przykładowe zdanie 108,Frase de ejemplo 108,,PLACEHOLDER: revisar y reemplazar
+A1,word,colores,fjala109,pl_słowo109,palabra109,img/study.png,PLACEHOLDER: revisar y reemplazar
+A1,word,colores,fjala110,pl_słowo110,palabra110,img/study.png,PLACEHOLDER: revisar y reemplazar
+A1,word,trabajo,fjala111,pl_słowo111,palabra111,img/study.png,PLACEHOLDER: revisar y reemplazar
+A1,phrase,trabajo,Fraza e testit 112,Przykładowe zdanie 112,Frase de ejemplo 112,,PLACEHOLDER: revisar y reemplazar
+A1,phrase,cuerpo,Fraza e testit 113,Przykładowe zdanie 113,Frase de ejemplo 113,,PLACEHOLDER: revisar y reemplazar
+A1,phrase,familia,Fraza e testit 114,Przykładowe zdanie 114,Frase de ejemplo 114,,PLACEHOLDER: revisar y reemplazar
+A1,word,compras,fjala115,pl_słowo115,palabra115,img/market.png,PLACEHOLDER: revisar y reemplazar
+A1,phrase,hogar,Fraza e testit 116,Przykładowe zdanie 116,Frase de ejemplo 116,,PLACEHOLDER: revisar y reemplazar
+A1,word,viaje,fjala117,pl_słowo117,palabra117,img/travel.png,PLACEHOLDER: revisar y reemplazar
+A1,phrase,comida,Fraza e testit 118,Przykładowe zdanie 118,Frase de ejemplo 118,,PLACEHOLDER: revisar y reemplazar
+A1,word,comida,fjala119,pl_słowo119,palabra119,img/food.png,PLACEHOLDER: revisar y reemplazar
+A1,phrase,cuerpo,Fraza e testit 120,Przykładowe zdanie 120,Frase de ejemplo 120,,PLACEHOLDER: revisar y reemplazar
+A1,phrase,trabajo,Fraza e testit 121,Przykładowe zdanie 121,Frase de ejemplo 121,,PLACEHOLDER: revisar y reemplazar
+A1,word,viaje,fjala122,pl_słowo122,palabra122,img/travel.png,PLACEHOLDER: revisar y reemplazar
+A1,word,familia,fjala123,pl_słowo123,palabra123,img/people.png,PLACEHOLDER: revisar y reemplazar
+A1,phrase,compras,Fraza e testit 124,Przykładowe zdanie 124,Frase de ejemplo 124,,PLACEHOLDER: revisar y reemplazar
+A1,phrase,trabajo,Fraza e testit 125,Przykładowe zdanie 125,Frase de ejemplo 125,,PLACEHOLDER: revisar y reemplazar
+A1,word,colores,fjala126,pl_słowo126,palabra126,img/study.png,PLACEHOLDER: revisar y reemplazar
+A1,phrase,viaje,Fraza e testit 127,Przykładowe zdanie 127,Frase de ejemplo 127,,PLACEHOLDER: revisar y reemplazar
+A1,word,comida,fjala128,pl_słowo128,palabra128,img/food.png,PLACEHOLDER: revisar y reemplazar
+A1,word,tiempo,fjala129,pl_słowo129,palabra129,img/study.png,PLACEHOLDER: revisar y reemplazar
+A1,word,cuerpo,fjala130,pl_słowo130,palabra130,img/people.png,PLACEHOLDER: revisar y reemplazar
+A1,word,tiempo,fjala131,pl_słowo131,palabra131,img/study.png,PLACEHOLDER: revisar y reemplazar
+A1,word,cuerpo,fjala132,pl_słowo132,palabra132,img/people.png,PLACEHOLDER: revisar y reemplazar
+A1,word,comida,fjala133,pl_słowo133,palabra133,img/food.png,PLACEHOLDER: revisar y reemplazar
+A1,word,colores,fjala134,pl_słowo134,palabra134,img/study.png,PLACEHOLDER: revisar y reemplazar
+A1,word,compras,fjala135,pl_słowo135,palabra135,img/market.png,PLACEHOLDER: revisar y reemplazar
+A1,word,colores,fjala136,pl_słowo136,palabra136,img/study.png,PLACEHOLDER: revisar y reemplazar
+A1,word,comida,fjala137,pl_słowo137,palabra137,img/food.png,PLACEHOLDER: revisar y reemplazar
+A1,word,cuerpo,fjala138,pl_słowo138,palabra138,img/people.png,PLACEHOLDER: revisar y reemplazar
+A1,word,comida,fjala139,pl_słowo139,palabra139,img/food.png,PLACEHOLDER: revisar y reemplazar
+A1,word,trabajo,fjala140,pl_słowo140,palabra140,img/study.png,PLACEHOLDER: revisar y reemplazar
+A1,word,tiempo,fjala141,pl_słowo141,palabra141,img/study.png,PLACEHOLDER: revisar y reemplazar
+A1,word,colores,fjala142,pl_słowo142,palabra142,img/study.png,PLACEHOLDER: revisar y reemplazar
+A1,phrase,viaje,Fraza e testit 143,Przykładowe zdanie 143,Frase de ejemplo 143,,PLACEHOLDER: revisar y reemplazar
+A1,word,hogar,fjala144,pl_słowo144,palabra144,img/house.png,PLACEHOLDER: revisar y reemplazar
+A1,phrase,números,Fraza e testit 145,Przykładowe zdanie 145,Frase de ejemplo 145,,PLACEHOLDER: revisar y reemplazar
+A1,word,números,fjala146,pl_słowo146,palabra146,img/study.png,PLACEHOLDER: revisar y reemplazar
+A1,word,comida,fjala147,pl_słowo147,palabra147,img/food.png,PLACEHOLDER: revisar y reemplazar
+A1,word,compras,fjala148,pl_słowo148,palabra148,img/market.png,PLACEHOLDER: revisar y reemplazar
+A1,word,tiempo,fjala149,pl_słowo149,palabra149,img/study.png,PLACEHOLDER: revisar y reemplazar
+A1,phrase,hogar,Fraza e testit 150,Przykładowe zdanie 150,Frase de ejemplo 150,,PLACEHOLDER: revisar y reemplazar
+A1,phrase,cuerpo,Fraza e testit 151,Przykładowe zdanie 151,Frase de ejemplo 151,,PLACEHOLDER: revisar y reemplazar
+A1,word,comida,fjala152,pl_słowo152,palabra152,img/food.png,PLACEHOLDER: revisar y reemplazar
+A1,word,familia,fjala153,pl_słowo153,palabra153,img/people.png,PLACEHOLDER: revisar y reemplazar
+A1,word,comida,fjala154,pl_słowo154,palabra154,img/food.png,PLACEHOLDER: revisar y reemplazar
+A1,word,compras,fjala155,pl_słowo155,palabra155,img/market.png,PLACEHOLDER: revisar y reemplazar
+A1,word,hogar,fjala156,pl_słowo156,palabra156,img/house.png,PLACEHOLDER: revisar y reemplazar
+A1,phrase,colores,Fraza e testit 157,Przykładowe zdanie 157,Frase de ejemplo 157,,PLACEHOLDER: revisar y reemplazar
+A1,word,tiempo,fjala158,pl_słowo158,palabra158,img/study.png,PLACEHOLDER: revisar y reemplazar
+A1,word,familia,fjala159,pl_słowo159,palabra159,img/people.png,PLACEHOLDER: revisar y reemplazar
+A1,phrase,trabajo,Fraza e testit 160,Przykładowe zdanie 160,Frase de ejemplo 160,,PLACEHOLDER: revisar y reemplazar
+A1,word,viaje,fjala161,pl_słowo161,palabra161,img/travel.png,PLACEHOLDER: revisar y reemplazar
+A1,word,números,fjala162,pl_słowo162,palabra162,img/study.png,PLACEHOLDER: revisar y reemplazar
+A1,phrase,viaje,Fraza e testit 163,Przykładowe zdanie 163,Frase de ejemplo 163,,PLACEHOLDER: revisar y reemplazar
+A1,phrase,colores,Fraza e testit 164,Przykładowe zdanie 164,Frase de ejemplo 164,,PLACEHOLDER: revisar y reemplazar
+A1,word,tiempo,fjala165,pl_słowo165,palabra165,img/study.png,PLACEHOLDER: revisar y reemplazar
+A1,phrase,viaje,Fraza e testit 166,Przykładowe zdanie 166,Frase de ejemplo 166,,PLACEHOLDER: revisar y reemplazar
+A1,word,comida,fjala167,pl_słowo167,palabra167,img/food.png,PLACEHOLDER: revisar y reemplazar
+A1,word,cuerpo,fjala168,pl_słowo168,palabra168,img/people.png,PLACEHOLDER: revisar y reemplazar
+A1,word,viaje,fjala169,pl_słowo169,palabra169,img/travel.png,PLACEHOLDER: revisar y reemplazar
+A1,word,familia,fjala170,pl_słowo170,palabra170,img/people.png,PLACEHOLDER: revisar y reemplazar
+A1,word,cuerpo,fjala171,pl_słowo171,palabra171,img/people.png,PLACEHOLDER: revisar y reemplazar
+A1,word,trabajo,fjala172,pl_słowo172,palabra172,img/study.png,PLACEHOLDER: revisar y reemplazar
+A1,phrase,compras,Fraza e testit 173,Przykładowe zdanie 173,Frase de ejemplo 173,,PLACEHOLDER: revisar y reemplazar
+A1,phrase,números,Fraza e testit 174,Przykładowe zdanie 174,Frase de ejemplo 174,,PLACEHOLDER: revisar y reemplazar
+A1,word,cuerpo,fjala175,pl_słowo175,palabra175,img/people.png,PLACEHOLDER: revisar y reemplazar
+A1,phrase,cuerpo,Fraza e testit 176,Przykładowe zdanie 176,Frase de ejemplo 176,,PLACEHOLDER: revisar y reemplazar
+A1,word,comida,fjala177,pl_słowo177,palabra177,img/food.png,PLACEHOLDER: revisar y reemplazar
+A1,word,números,fjala178,pl_słowo178,palabra178,img/study.png,PLACEHOLDER: revisar y reemplazar
+A1,phrase,trabajo,Fraza e testit 179,Przykładowe zdanie 179,Frase de ejemplo 179,,PLACEHOLDER: revisar y reemplazar
+A1,phrase,tiempo,Fraza e testit 180,Przykładowe zdanie 180,Frase de ejemplo 180,,PLACEHOLDER: revisar y reemplazar
+A1,phrase,trabajo,Fraza e testit 181,Przykładowe zdanie 181,Frase de ejemplo 181,,PLACEHOLDER: revisar y reemplazar
+A1,phrase,colores,Fraza e testit 182,Przykładowe zdanie 182,Frase de ejemplo 182,,PLACEHOLDER: revisar y reemplazar
+A1,word,hogar,fjala183,pl_słowo183,palabra183,img/house.png,PLACEHOLDER: revisar y reemplazar
+A1,word,comida,fjala184,pl_słowo184,palabra184,img/food.png,PLACEHOLDER: revisar y reemplazar
+A1,word,colores,fjala185,pl_słowo185,palabra185,img/study.png,PLACEHOLDER: revisar y reemplazar
+A1,word,trabajo,fjala186,pl_słowo186,palabra186,img/study.png,PLACEHOLDER: revisar y reemplazar
+A1,word,colores,fjala187,pl_słowo187,palabra187,img/study.png,PLACEHOLDER: revisar y reemplazar
+A1,word,hogar,fjala188,pl_słowo188,palabra188,img/house.png,PLACEHOLDER: revisar y reemplazar
+A1,word,viaje,fjala189,pl_słowo189,palabra189,img/travel.png,PLACEHOLDER: revisar y reemplazar
+A1,phrase,comida,Fraza e testit 190,Przykładowe zdanie 190,Frase de ejemplo 190,,PLACEHOLDER: revisar y reemplazar
+A1,word,números,fjala191,pl_słowo191,palabra191,img/study.png,PLACEHOLDER: revisar y reemplazar
+A1,word,tiempo,fjala192,pl_słowo192,palabra192,img/study.png,PLACEHOLDER: revisar y reemplazar
+A1,word,hogar,fjala193,pl_słowo193,palabra193,img/house.png,PLACEHOLDER: revisar y reemplazar
+A1,word,hogar,fjala194,pl_słowo194,palabra194,img/house.png,PLACEHOLDER: revisar y reemplazar
+A1,word,hogar,fjala195,pl_słowo195,palabra195,img/house.png,PLACEHOLDER: revisar y reemplazar
+A1,word,colores,fjala196,pl_słowo196,palabra196,img/study.png,PLACEHOLDER: revisar y reemplazar
+A1,word,familia,fjala197,pl_słowo197,palabra197,img/people.png,PLACEHOLDER: revisar y reemplazar
+A1,word,comida,fjala198,pl_słowo198,palabra198,img/food.png,PLACEHOLDER: revisar y reemplazar
+A1,phrase,viaje,Fraza e testit 199,Przykładowe zdanie 199,Frase de ejemplo 199,,PLACEHOLDER: revisar y reemplazar
+A1,word,tiempo,fjala200,pl_słowo200,palabra200,img/study.png,PLACEHOLDER: revisar y reemplazar
+A1,phrase,tiempo,Fraza e testit 201,Przykładowe zdanie 201,Frase de ejemplo 201,,PLACEHOLDER: revisar y reemplazar
+A1,word,números,fjala202,pl_słowo202,palabra202,img/study.png,PLACEHOLDER: revisar y reemplazar
+A1,phrase,trabajo,Fraza e testit 203,Przykładowe zdanie 203,Frase de ejemplo 203,,PLACEHOLDER: revisar y reemplazar
+A1,word,familia,fjala204,pl_słowo204,palabra204,img/people.png,PLACEHOLDER: revisar y reemplazar
+A1,phrase,colores,Fraza e testit 205,Przykładowe zdanie 205,Frase de ejemplo 205,,PLACEHOLDER: revisar y reemplazar
+A1,word,comida,fjala206,pl_słowo206,palabra206,img/food.png,PLACEHOLDER: revisar y reemplazar
+A1,word,viaje,fjala207,pl_słowo207,palabra207,img/travel.png,PLACEHOLDER: revisar y reemplazar
+A1,word,cuerpo,fjala208,pl_słowo208,palabra208,img/people.png,PLACEHOLDER: revisar y reemplazar
+A1,phrase,números,Fraza e testit 209,Przykładowe zdanie 209,Frase de ejemplo 209,,PLACEHOLDER: revisar y reemplazar
+A1,word,comida,fjala210,pl_słowo210,palabra210,img/food.png,PLACEHOLDER: revisar y reemplazar
+A1,phrase,hogar,Fraza e testit 211,Przykładowe zdanie 211,Frase de ejemplo 211,,PLACEHOLDER: revisar y reemplazar
+A1,word,números,fjala212,pl_słowo212,palabra212,img/study.png,PLACEHOLDER: revisar y reemplazar
+A1,word,trabajo,fjala213,pl_słowo213,palabra213,img/study.png,PLACEHOLDER: revisar y reemplazar
+A1,word,viaje,fjala214,pl_słowo214,palabra214,img/travel.png,PLACEHOLDER: revisar y reemplazar
+A1,phrase,compras,Fraza e testit 215,Przykładowe zdanie 215,Frase de ejemplo 215,,PLACEHOLDER: revisar y reemplazar
+A1,word,colores,fjala216,pl_słowo216,palabra216,img/study.png,PLACEHOLDER: revisar y reemplazar
+A1,phrase,comida,Fraza e testit 217,Przykładowe zdanie 217,Frase de ejemplo 217,,PLACEHOLDER: revisar y reemplazar
+A1,word,viaje,fjala218,pl_słowo218,palabra218,img/travel.png,PLACEHOLDER: revisar y reemplazar
+A1,word,hogar,fjala219,pl_słowo219,palabra219,img/house.png,PLACEHOLDER: revisar y reemplazar
+A1,phrase,tiempo,Fraza e testit 220,Przykładowe zdanie 220,Frase de ejemplo 220,,PLACEHOLDER: revisar y reemplazar
+A1,phrase,hogar,Fraza e testit 221,Przykładowe zdanie 221,Frase de ejemplo 221,,PLACEHOLDER: revisar y reemplazar
+A1,word,cuerpo,fjala222,pl_słowo222,palabra222,img/people.png,PLACEHOLDER: revisar y reemplazar
+A1,word,trabajo,fjala223,pl_słowo223,palabra223,img/study.png,PLACEHOLDER: revisar y reemplazar
+A1,word,familia,fjala224,pl_słowo224,palabra224,img/people.png,PLACEHOLDER: revisar y reemplazar
+A1,phrase,cuerpo,Fraza e testit 225,Przykładowe zdanie 225,Frase de ejemplo 225,,PLACEHOLDER: revisar y reemplazar
+A1,word,compras,fjala226,pl_słowo226,palabra226,img/market.png,PLACEHOLDER: revisar y reemplazar
+A1,phrase,hogar,Fraza e testit 227,Przykładowe zdanie 227,Frase de ejemplo 227,,PLACEHOLDER: revisar y reemplazar
+A1,phrase,comida,Fraza e testit 228,Przykładowe zdanie 228,Frase de ejemplo 228,,PLACEHOLDER: revisar y reemplazar
+A1,word,cuerpo,fjala229,pl_słowo229,palabra229,img/people.png,PLACEHOLDER: revisar y reemplazar
+A1,phrase,viaje,Fraza e testit 230,Przykładowe zdanie 230,Frase de ejemplo 230,,PLACEHOLDER: revisar y reemplazar
+A1,word,familia,fjala231,pl_słowo231,palabra231,img/people.png,PLACEHOLDER: revisar y reemplazar
+A1,word,viaje,fjala232,pl_słowo232,palabra232,img/travel.png,PLACEHOLDER: revisar y reemplazar
+A1,word,números,fjala233,pl_słowo233,palabra233,img/study.png,PLACEHOLDER: revisar y reemplazar
+A1,word,cuerpo,fjala234,pl_słowo234,palabra234,img/people.png,PLACEHOLDER: revisar y reemplazar
+A1,word,hogar,fjala235,pl_słowo235,palabra235,img/house.png,PLACEHOLDER: revisar y reemplazar
+A1,word,hogar,fjala236,pl_słowo236,palabra236,img/house.png,PLACEHOLDER: revisar y reemplazar
+A1,word,tiempo,fjala237,pl_słowo237,palabra237,img/study.png,PLACEHOLDER: revisar y reemplazar
+A1,phrase,familia,Fraza e testit 238,Przykładowe zdanie 238,Frase de ejemplo 238,,PLACEHOLDER: revisar y reemplazar
+A1,word,hogar,fjala239,pl_słowo239,palabra239,img/house.png,PLACEHOLDER: revisar y reemplazar
+A1,phrase,tiempo,Fraza e testit 240,Przykładowe zdanie 240,Frase de ejemplo 240,,PLACEHOLDER: revisar y reemplazar
+A1,word,compras,fjala241,pl_słowo241,palabra241,img/market.png,PLACEHOLDER: revisar y reemplazar
+A1,word,viaje,fjala242,pl_słowo242,palabra242,img/travel.png,PLACEHOLDER: revisar y reemplazar
+A1,word,números,fjala243,pl_słowo243,palabra243,img/study.png,PLACEHOLDER: revisar y reemplazar
+A1,word,familia,fjala244,pl_słowo244,palabra244,img/people.png,PLACEHOLDER: revisar y reemplazar
+A1,word,números,fjala245,pl_słowo245,palabra245,img/study.png,PLACEHOLDER: revisar y reemplazar
+A1,word,números,fjala246,pl_słowo246,palabra246,img/study.png,PLACEHOLDER: revisar y reemplazar
+A1,word,números,fjala247,pl_słowo247,palabra247,img/study.png,PLACEHOLDER: revisar y reemplazar
+A1,phrase,números,Fraza e testit 248,Przykładowe zdanie 248,Frase de ejemplo 248,,PLACEHOLDER: revisar y reemplazar
+A1,word,trabajo,fjala249,pl_słowo249,palabra249,img/study.png,PLACEHOLDER: revisar y reemplazar
+A1,word,hogar,fjala250,pl_słowo250,palabra250,img/house.png,PLACEHOLDER: revisar y reemplazar
+A1,word,tiempo,fjala251,pl_słowo251,palabra251,img/study.png,PLACEHOLDER: revisar y reemplazar
+A1,word,números,fjala252,pl_słowo252,palabra252,img/study.png,PLACEHOLDER: revisar y reemplazar
+A1,word,viaje,fjala253,pl_słowo253,palabra253,img/travel.png,PLACEHOLDER: revisar y reemplazar
+A1,phrase,familia,Fraza e testit 254,Przykładowe zdanie 254,Frase de ejemplo 254,,PLACEHOLDER: revisar y reemplazar
+A1,word,familia,fjala255,pl_słowo255,palabra255,img/people.png,PLACEHOLDER: revisar y reemplazar
+A1,word,trabajo,fjala256,pl_słowo256,palabra256,img/study.png,PLACEHOLDER: revisar y reemplazar
+A1,word,viaje,fjala257,pl_słowo257,palabra257,img/travel.png,PLACEHOLDER: revisar y reemplazar
+A1,word,números,fjala258,pl_słowo258,palabra258,img/study.png,PLACEHOLDER: revisar y reemplazar
+A1,word,trabajo,fjala259,pl_słowo259,palabra259,img/study.png,PLACEHOLDER: revisar y reemplazar
+A1,phrase,hogar,Fraza e testit 260,Przykładowe zdanie 260,Frase de ejemplo 260,,PLACEHOLDER: revisar y reemplazar
+A1,word,tiempo,fjala261,pl_słowo261,palabra261,img/study.png,PLACEHOLDER: revisar y reemplazar
+A1,phrase,familia,Fraza e testit 262,Przykładowe zdanie 262,Frase de ejemplo 262,,PLACEHOLDER: revisar y reemplazar
+A1,word,tiempo,fjala263,pl_słowo263,palabra263,img/study.png,PLACEHOLDER: revisar y reemplazar
+A1,word,tiempo,fjala264,pl_słowo264,palabra264,img/study.png,PLACEHOLDER: revisar y reemplazar
+A1,word,compras,fjala265,pl_słowo265,palabra265,img/market.png,PLACEHOLDER: revisar y reemplazar
+A1,phrase,tiempo,Fraza e testit 266,Przykładowe zdanie 266,Frase de ejemplo 266,,PLACEHOLDER: revisar y reemplazar
+A1,phrase,trabajo,Fraza e testit 267,Przykładowe zdanie 267,Frase de ejemplo 267,,PLACEHOLDER: revisar y reemplazar
+A1,word,hogar,fjala268,pl_słowo268,palabra268,img/house.png,PLACEHOLDER: revisar y reemplazar
+A1,word,comida,fjala269,pl_słowo269,palabra269,img/food.png,PLACEHOLDER: revisar y reemplazar
+A1,word,colores,fjala270,pl_słowo270,palabra270,img/study.png,PLACEHOLDER: revisar y reemplazar
+A1,word,familia,fjala271,pl_słowo271,palabra271,img/people.png,PLACEHOLDER: revisar y reemplazar
+A1,word,trabajo,fjala272,pl_słowo272,palabra272,img/study.png,PLACEHOLDER: revisar y reemplazar
+A1,word,familia,fjala273,pl_słowo273,palabra273,img/people.png,PLACEHOLDER: revisar y reemplazar
+A1,word,colores,fjala274,pl_słowo274,palabra274,img/study.png,PLACEHOLDER: revisar y reemplazar
+A1,word,comida,fjala275,pl_słowo275,palabra275,img/food.png,PLACEHOLDER: revisar y reemplazar
+A1,word,comida,fjala276,pl_słowo276,palabra276,img/food.png,PLACEHOLDER: revisar y reemplazar
+A1,word,comida,fjala277,pl_słowo277,palabra277,img/food.png,PLACEHOLDER: revisar y reemplazar
+A1,word,trabajo,fjala278,pl_słowo278,palabra278,img/study.png,PLACEHOLDER: revisar y reemplazar
+A1,word,familia,fjala279,pl_słowo279,palabra279,img/people.png,PLACEHOLDER: revisar y reemplazar
+A1,phrase,trabajo,Fraza e testit 280,Przykładowe zdanie 280,Frase de ejemplo 280,,PLACEHOLDER: revisar y reemplazar
+A1,phrase,comida,Fraza e testit 281,Przykładowe zdanie 281,Frase de ejemplo 281,,PLACEHOLDER: revisar y reemplazar
+A1,phrase,hogar,Fraza e testit 282,Przykładowe zdanie 282,Frase de ejemplo 282,,PLACEHOLDER: revisar y reemplazar
+A1,word,trabajo,fjala283,pl_słowo283,palabra283,img/study.png,PLACEHOLDER: revisar y reemplazar
+A1,word,viaje,fjala284,pl_słowo284,palabra284,img/travel.png,PLACEHOLDER: revisar y reemplazar
+A1,word,trabajo,fjala285,pl_słowo285,palabra285,img/study.png,PLACEHOLDER: revisar y reemplazar
+A1,word,hogar,fjala286,pl_słowo286,palabra286,img/house.png,PLACEHOLDER: revisar y reemplazar
+A1,word,trabajo,fjala287,pl_słowo287,palabra287,img/study.png,PLACEHOLDER: revisar y reemplazar
+A1,word,viaje,fjala288,pl_słowo288,palabra288,img/travel.png,PLACEHOLDER: revisar y reemplazar
+A1,phrase,cuerpo,Fraza e testit 289,Przykładowe zdanie 289,Frase de ejemplo 289,,PLACEHOLDER: revisar y reemplazar
+A1,word,compras,fjala290,pl_słowo290,palabra290,img/market.png,PLACEHOLDER: revisar y reemplazar
+A1,word,compras,fjala291,pl_słowo291,palabra291,img/market.png,PLACEHOLDER: revisar y reemplazar
+A1,word,números,fjala292,pl_słowo292,palabra292,img/study.png,PLACEHOLDER: revisar y reemplazar
+A1,word,viaje,fjala293,pl_słowo293,palabra293,img/travel.png,PLACEHOLDER: revisar y reemplazar
+A1,phrase,familia,Fraza e testit 294,Przykładowe zdanie 294,Frase de ejemplo 294,,PLACEHOLDER: revisar y reemplazar
+A1,word,viaje,fjala295,pl_słowo295,palabra295,img/travel.png,PLACEHOLDER: revisar y reemplazar
+A1,word,trabajo,fjala296,pl_słowo296,palabra296,img/study.png,PLACEHOLDER: revisar y reemplazar
+A1,word,colores,fjala297,pl_słowo297,palabra297,img/study.png,PLACEHOLDER: revisar y reemplazar
+A1,phrase,comida,Fraza e testit 298,Przykładowe zdanie 298,Frase de ejemplo 298,,PLACEHOLDER: revisar y reemplazar
+A1,word,colores,fjala299,pl_słowo299,palabra299,img/study.png,PLACEHOLDER: revisar y reemplazar
+A1,phrase,compras,Fraza e testit 300,Przykładowe zdanie 300,Frase de ejemplo 300,,PLACEHOLDER: revisar y reemplazar
+A1,word,cuerpo,fjala301,pl_słowo301,palabra301,img/people.png,PLACEHOLDER: revisar y reemplazar
+A1,word,cuerpo,fjala302,pl_słowo302,palabra302,img/people.png,PLACEHOLDER: revisar y reemplazar
+A1,word,números,fjala303,pl_słowo303,palabra303,img/study.png,PLACEHOLDER: revisar y reemplazar
+A1,phrase,viaje,Fraza e testit 304,Przykładowe zdanie 304,Frase de ejemplo 304,,PLACEHOLDER: revisar y reemplazar
+A1,word,hogar,fjala305,pl_słowo305,palabra305,img/house.png,PLACEHOLDER: revisar y reemplazar
+A1,word,familia,fjala306,pl_słowo306,palabra306,img/people.png,PLACEHOLDER: revisar y reemplazar
+A1,word,familia,fjala307,pl_słowo307,palabra307,img/people.png,PLACEHOLDER: revisar y reemplazar
+A1,word,trabajo,fjala308,pl_słowo308,palabra308,img/study.png,PLACEHOLDER: revisar y reemplazar
+A1,word,tiempo,fjala309,pl_słowo309,palabra309,img/study.png,PLACEHOLDER: revisar y reemplazar
+A1,word,colores,fjala310,pl_słowo310,palabra310,img/study.png,PLACEHOLDER: revisar y reemplazar
+A1,phrase,números,Fraza e testit 311,Przykładowe zdanie 311,Frase de ejemplo 311,,PLACEHOLDER: revisar y reemplazar
+A1,phrase,números,Fraza e testit 312,Przykładowe zdanie 312,Frase de ejemplo 312,,PLACEHOLDER: revisar y reemplazar
+A1,phrase,tiempo,Fraza e testit 313,Przykładowe zdanie 313,Frase de ejemplo 313,,PLACEHOLDER: revisar y reemplazar
+A1,word,números,fjala314,pl_słowo314,palabra314,img/study.png,PLACEHOLDER: revisar y reemplazar
+A1,phrase,tiempo,Fraza e testit 315,Przykładowe zdanie 315,Frase de ejemplo 315,,PLACEHOLDER: revisar y reemplazar
+A1,phrase,compras,Fraza e testit 316,Przykładowe zdanie 316,Frase de ejemplo 316,,PLACEHOLDER: revisar y reemplazar
+A1,phrase,trabajo,Fraza e testit 317,Przykładowe zdanie 317,Frase de ejemplo 317,,PLACEHOLDER: revisar y reemplazar
+A1,word,tiempo,fjala318,pl_słowo318,palabra318,img/study.png,PLACEHOLDER: revisar y reemplazar
+A1,phrase,colores,Fraza e testit 319,Przykładowe zdanie 319,Frase de ejemplo 319,,PLACEHOLDER: revisar y reemplazar
+A1,phrase,familia,Fraza e testit 320,Przykładowe zdanie 320,Frase de ejemplo 320,,PLACEHOLDER: revisar y reemplazar
+A1,word,cuerpo,fjala321,pl_słowo321,palabra321,img/people.png,PLACEHOLDER: revisar y reemplazar
+A1,word,números,fjala322,pl_słowo322,palabra322,img/study.png,PLACEHOLDER: revisar y reemplazar
+A1,word,tiempo,fjala323,pl_słowo323,palabra323,img/study.png,PLACEHOLDER: revisar y reemplazar
+A1,phrase,trabajo,Fraza e testit 324,Przykładowe zdanie 324,Frase de ejemplo 324,,PLACEHOLDER: revisar y reemplazar
+A1,word,números,fjala325,pl_słowo325,palabra325,img/study.png,PLACEHOLDER: revisar y reemplazar
+A1,phrase,familia,Fraza e testit 326,Przykładowe zdanie 326,Frase de ejemplo 326,,PLACEHOLDER: revisar y reemplazar
+A1,phrase,cuerpo,Fraza e testit 327,Przykładowe zdanie 327,Frase de ejemplo 327,,PLACEHOLDER: revisar y reemplazar
+A1,phrase,cuerpo,Fraza e testit 328,Przykładowe zdanie 328,Frase de ejemplo 328,,PLACEHOLDER: revisar y reemplazar
+A1,phrase,viaje,Fraza e testit 329,Przykładowe zdanie 329,Frase de ejemplo 329,,PLACEHOLDER: revisar y reemplazar
+A1,word,números,fjala330,pl_słowo330,palabra330,img/study.png,PLACEHOLDER: revisar y reemplazar
+A1,phrase,tiempo,Fraza e testit 331,Przykładowe zdanie 331,Frase de ejemplo 331,,PLACEHOLDER: revisar y reemplazar
+A1,phrase,trabajo,Fraza e testit 332,Przykładowe zdanie 332,Frase de ejemplo 332,,PLACEHOLDER: revisar y reemplazar
+A1,word,números,fjala333,pl_słowo333,palabra333,img/study.png,PLACEHOLDER: revisar y reemplazar
+A1,word,tiempo,fjala334,pl_słowo334,palabra334,img/study.png,PLACEHOLDER: revisar y reemplazar
+A1,word,colores,fjala335,pl_słowo335,palabra335,img/study.png,PLACEHOLDER: revisar y reemplazar
+A1,word,tiempo,fjala336,pl_słowo336,palabra336,img/study.png,PLACEHOLDER: revisar y reemplazar
+A1,word,hogar,fjala337,pl_słowo337,palabra337,img/house.png,PLACEHOLDER: revisar y reemplazar
+A1,word,números,fjala338,pl_słowo338,palabra338,img/study.png,PLACEHOLDER: revisar y reemplazar
+A1,word,cuerpo,fjala339,pl_słowo339,palabra339,img/people.png,PLACEHOLDER: revisar y reemplazar
+A1,word,números,fjala340,pl_słowo340,palabra340,img/study.png,PLACEHOLDER: revisar y reemplazar
+A1,word,compras,fjala341,pl_słowo341,palabra341,img/market.png,PLACEHOLDER: revisar y reemplazar
+A1,word,compras,fjala342,pl_słowo342,palabra342,img/market.png,PLACEHOLDER: revisar y reemplazar
+A1,word,números,fjala343,pl_słowo343,palabra343,img/study.png,PLACEHOLDER: revisar y reemplazar
+A1,phrase,colores,Fraza e testit 344,Przykładowe zdanie 344,Frase de ejemplo 344,,PLACEHOLDER: revisar y reemplazar
+A1,phrase,tiempo,Fraza e testit 345,Przykładowe zdanie 345,Frase de ejemplo 345,,PLACEHOLDER: revisar y reemplazar
+A1,word,tiempo,fjala346,pl_słowo346,palabra346,img/study.png,PLACEHOLDER: revisar y reemplazar
+A1,word,compras,fjala347,pl_słowo347,palabra347,img/market.png,PLACEHOLDER: revisar y reemplazar
+A1,phrase,hogar,Fraza e testit 348,Przykładowe zdanie 348,Frase de ejemplo 348,,PLACEHOLDER: revisar y reemplazar
+A1,word,números,fjala349,pl_słowo349,palabra349,img/study.png,PLACEHOLDER: revisar y reemplazar
+A1,word,compras,fjala350,pl_słowo350,palabra350,img/market.png,PLACEHOLDER: revisar y reemplazar
+A1,phrase,familia,Fraza e testit 351,Przykładowe zdanie 351,Frase de ejemplo 351,,PLACEHOLDER: revisar y reemplazar
+A1,phrase,compras,Fraza e testit 352,Przykładowe zdanie 352,Frase de ejemplo 352,,PLACEHOLDER: revisar y reemplazar
+A1,word,hogar,fjala353,pl_słowo353,palabra353,img/house.png,PLACEHOLDER: revisar y reemplazar
+A1,word,familia,fjala354,pl_słowo354,palabra354,img/people.png,PLACEHOLDER: revisar y reemplazar
+A1,word,cuerpo,fjala355,pl_słowo355,palabra355,img/people.png,PLACEHOLDER: revisar y reemplazar
+A1,phrase,tiempo,Fraza e testit 356,Przykładowe zdanie 356,Frase de ejemplo 356,,PLACEHOLDER: revisar y reemplazar
+A1,word,cuerpo,fjala357,pl_słowo357,palabra357,img/people.png,PLACEHOLDER: revisar y reemplazar
+A1,phrase,comida,Fraza e testit 358,Przykładowe zdanie 358,Frase de ejemplo 358,,PLACEHOLDER: revisar y reemplazar
+A1,word,familia,fjala359,pl_słowo359,palabra359,img/people.png,PLACEHOLDER: revisar y reemplazar
+A1,word,hogar,fjala360,pl_słowo360,palabra360,img/house.png,PLACEHOLDER: revisar y reemplazar
+A1,word,hogar,fjala361,pl_słowo361,palabra361,img/house.png,PLACEHOLDER: revisar y reemplazar
+A1,phrase,compras,Fraza e testit 362,Przykładowe zdanie 362,Frase de ejemplo 362,,PLACEHOLDER: revisar y reemplazar
+A1,word,cuerpo,fjala363,pl_słowo363,palabra363,img/people.png,PLACEHOLDER: revisar y reemplazar
+A1,phrase,números,Fraza e testit 364,Przykładowe zdanie 364,Frase de ejemplo 364,,PLACEHOLDER: revisar y reemplazar
+A1,word,números,fjala365,pl_słowo365,palabra365,img/study.png,PLACEHOLDER: revisar y reemplazar
+A1,phrase,hogar,Fraza e testit 366,Przykładowe zdanie 366,Frase de ejemplo 366,,PLACEHOLDER: revisar y reemplazar
+A1,phrase,hogar,Fraza e testit 367,Przykładowe zdanie 367,Frase de ejemplo 367,,PLACEHOLDER: revisar y reemplazar
+A1,word,familia,fjala368,pl_słowo368,palabra368,img/people.png,PLACEHOLDER: revisar y reemplazar
+A1,word,tiempo,fjala369,pl_słowo369,palabra369,img/study.png,PLACEHOLDER: revisar y reemplazar
+A1,word,familia,fjala370,pl_słowo370,palabra370,img/people.png,PLACEHOLDER: revisar y reemplazar
+A1,word,compras,fjala371,pl_słowo371,palabra371,img/market.png,PLACEHOLDER: revisar y reemplazar
+A1,phrase,cuerpo,Fraza e testit 372,Przykładowe zdanie 372,Frase de ejemplo 372,,PLACEHOLDER: revisar y reemplazar
+A1,word,familia,fjala373,pl_słowo373,palabra373,img/people.png,PLACEHOLDER: revisar y reemplazar
+A1,word,cuerpo,fjala374,pl_słowo374,palabra374,img/people.png,PLACEHOLDER: revisar y reemplazar
+A1,word,colores,fjala375,pl_słowo375,palabra375,img/study.png,PLACEHOLDER: revisar y reemplazar
+A1,phrase,compras,Fraza e testit 376,Przykładowe zdanie 376,Frase de ejemplo 376,,PLACEHOLDER: revisar y reemplazar
+A1,word,familia,fjala377,pl_słowo377,palabra377,img/people.png,PLACEHOLDER: revisar y reemplazar
+A1,word,cuerpo,fjala378,pl_słowo378,palabra378,img/people.png,PLACEHOLDER: revisar y reemplazar
+A1,word,trabajo,fjala379,pl_słowo379,palabra379,img/study.png,PLACEHOLDER: revisar y reemplazar
+A1,word,colores,fjala380,pl_słowo380,palabra380,img/study.png,PLACEHOLDER: revisar y reemplazar
+A1,word,trabajo,fjala381,pl_słowo381,palabra381,img/study.png,PLACEHOLDER: revisar y reemplazar
+A1,word,colores,fjala382,pl_słowo382,palabra382,img/study.png,PLACEHOLDER: revisar y reemplazar
+A1,word,números,fjala383,pl_słowo383,palabra383,img/study.png,PLACEHOLDER: revisar y reemplazar
+A1,word,compras,fjala384,pl_słowo384,palabra384,img/market.png,PLACEHOLDER: revisar y reemplazar
+A1,word,colores,fjala385,pl_słowo385,palabra385,img/study.png,PLACEHOLDER: revisar y reemplazar
+A1,word,números,fjala386,pl_słowo386,palabra386,img/study.png,PLACEHOLDER: revisar y reemplazar
+A1,word,viaje,fjala387,pl_słowo387,palabra387,img/travel.png,PLACEHOLDER: revisar y reemplazar
+A1,phrase,trabajo,Fraza e testit 388,Przykładowe zdanie 388,Frase de ejemplo 388,,PLACEHOLDER: revisar y reemplazar
+A1,phrase,hogar,Fraza e testit 389,Przykładowe zdanie 389,Frase de ejemplo 389,,PLACEHOLDER: revisar y reemplazar
+A1,word,cuerpo,fjala390,pl_słowo390,palabra390,img/people.png,PLACEHOLDER: revisar y reemplazar
+A1,phrase,trabajo,Fraza e testit 391,Przykładowe zdanie 391,Frase de ejemplo 391,,PLACEHOLDER: revisar y reemplazar
+A1,phrase,comida,Fraza e testit 392,Przykładowe zdanie 392,Frase de ejemplo 392,,PLACEHOLDER: revisar y reemplazar
+A1,phrase,colores,Fraza e testit 393,Przykładowe zdanie 393,Frase de ejemplo 393,,PLACEHOLDER: revisar y reemplazar
+A1,word,tiempo,fjala394,pl_słowo394,palabra394,img/study.png,PLACEHOLDER: revisar y reemplazar
+A1,word,tiempo,fjala395,pl_słowo395,palabra395,img/study.png,PLACEHOLDER: revisar y reemplazar
+A1,word,trabajo,fjala396,pl_słowo396,palabra396,img/study.png,PLACEHOLDER: revisar y reemplazar
+A1,phrase,números,Fraza e testit 397,Przykładowe zdanie 397,Frase de ejemplo 397,,PLACEHOLDER: revisar y reemplazar
+A1,word,trabajo,fjala398,pl_słowo398,palabra398,img/study.png,PLACEHOLDER: revisar y reemplazar
+A1,word,compras,fjala399,pl_słowo399,palabra399,img/market.png,PLACEHOLDER: revisar y reemplazar
+A1,word,familia,fjala400,pl_słowo400,palabra400,img/people.png,PLACEHOLDER: revisar y reemplazar
+A1,phrase,números,Fraza e testit 401,Przykładowe zdanie 401,Frase de ejemplo 401,,PLACEHOLDER: revisar y reemplazar
+A1,word,números,fjala402,pl_słowo402,palabra402,img/study.png,PLACEHOLDER: revisar y reemplazar
+A1,word,familia,fjala403,pl_słowo403,palabra403,img/people.png,PLACEHOLDER: revisar y reemplazar
+A1,word,comida,fjala404,pl_słowo404,palabra404,img/food.png,PLACEHOLDER: revisar y reemplazar
+A1,word,números,fjala405,pl_słowo405,palabra405,img/study.png,PLACEHOLDER: revisar y reemplazar
+A1,word,familia,fjala406,pl_słowo406,palabra406,img/people.png,PLACEHOLDER: revisar y reemplazar
+A1,word,números,fjala407,pl_słowo407,palabra407,img/study.png,PLACEHOLDER: revisar y reemplazar
+A1,phrase,hogar,Fraza e testit 408,Przykładowe zdanie 408,Frase de ejemplo 408,,PLACEHOLDER: revisar y reemplazar
+A1,word,compras,fjala409,pl_słowo409,palabra409,img/market.png,PLACEHOLDER: revisar y reemplazar
+A1,word,hogar,fjala410,pl_słowo410,palabra410,img/house.png,PLACEHOLDER: revisar y reemplazar
+A1,phrase,números,Fraza e testit 411,Przykładowe zdanie 411,Frase de ejemplo 411,,PLACEHOLDER: revisar y reemplazar
+A1,word,trabajo,fjala412,pl_słowo412,palabra412,img/study.png,PLACEHOLDER: revisar y reemplazar
+A1,word,viaje,fjala413,pl_słowo413,palabra413,img/travel.png,PLACEHOLDER: revisar y reemplazar
+A1,word,hogar,fjala414,pl_słowo414,palabra414,img/house.png,PLACEHOLDER: revisar y reemplazar
+A1,word,números,fjala415,pl_słowo415,palabra415,img/study.png,PLACEHOLDER: revisar y reemplazar
+A1,phrase,viaje,Fraza e testit 416,Przykładowe zdanie 416,Frase de ejemplo 416,,PLACEHOLDER: revisar y reemplazar
+A1,word,familia,fjala417,pl_słowo417,palabra417,img/people.png,PLACEHOLDER: revisar y reemplazar
+A1,word,colores,fjala418,pl_słowo418,palabra418,img/study.png,PLACEHOLDER: revisar y reemplazar
+A1,phrase,tiempo,Fraza e testit 419,Przykładowe zdanie 419,Frase de ejemplo 419,,PLACEHOLDER: revisar y reemplazar
+A1,word,colores,fjala420,pl_słowo420,palabra420,img/study.png,PLACEHOLDER: revisar y reemplazar
+A1,word,tiempo,fjala421,pl_słowo421,palabra421,img/study.png,PLACEHOLDER: revisar y reemplazar
+A1,word,tiempo,fjala422,pl_słowo422,palabra422,img/study.png,PLACEHOLDER: revisar y reemplazar
+A1,word,compras,fjala423,pl_słowo423,palabra423,img/market.png,PLACEHOLDER: revisar y reemplazar
+A1,word,compras,fjala424,pl_słowo424,palabra424,img/market.png,PLACEHOLDER: revisar y reemplazar
+A1,word,colores,fjala425,pl_słowo425,palabra425,img/study.png,PLACEHOLDER: revisar y reemplazar
+A1,phrase,números,Fraza e testit 426,Przykładowe zdanie 426,Frase de ejemplo 426,,PLACEHOLDER: revisar y reemplazar
+A1,word,comida,fjala427,pl_słowo427,palabra427,img/food.png,PLACEHOLDER: revisar y reemplazar
+A1,word,cuerpo,fjala428,pl_słowo428,palabra428,img/people.png,PLACEHOLDER: revisar y reemplazar
+A1,phrase,trabajo,Fraza e testit 429,Przykładowe zdanie 429,Frase de ejemplo 429,,PLACEHOLDER: revisar y reemplazar
+A1,word,colores,fjala430,pl_słowo430,palabra430,img/study.png,PLACEHOLDER: revisar y reemplazar
+A1,word,comida,fjala431,pl_słowo431,palabra431,img/food.png,PLACEHOLDER: revisar y reemplazar
+A1,word,hogar,fjala432,pl_słowo432,palabra432,img/house.png,PLACEHOLDER: revisar y reemplazar
+A1,word,familia,fjala433,pl_słowo433,palabra433,img/people.png,PLACEHOLDER: revisar y reemplazar
+A1,phrase,familia,Fraza e testit 434,Przykładowe zdanie 434,Frase de ejemplo 434,,PLACEHOLDER: revisar y reemplazar
+A1,phrase,cuerpo,Fraza e testit 435,Przykładowe zdanie 435,Frase de ejemplo 435,,PLACEHOLDER: revisar y reemplazar
+A1,phrase,tiempo,Fraza e testit 436,Przykładowe zdanie 436,Frase de ejemplo 436,,PLACEHOLDER: revisar y reemplazar
+A1,phrase,colores,Fraza e testit 437,Przykładowe zdanie 437,Frase de ejemplo 437,,PLACEHOLDER: revisar y reemplazar
+A1,phrase,cuerpo,Fraza e testit 438,Przykładowe zdanie 438,Frase de ejemplo 438,,PLACEHOLDER: revisar y reemplazar
+A1,word,compras,fjala439,pl_słowo439,palabra439,img/market.png,PLACEHOLDER: revisar y reemplazar
+A1,word,números,fjala440,pl_słowo440,palabra440,img/study.png,PLACEHOLDER: revisar y reemplazar
+A1,word,hogar,fjala441,pl_słowo441,palabra441,img/house.png,PLACEHOLDER: revisar y reemplazar
+A1,phrase,compras,Fraza e testit 442,Przykładowe zdanie 442,Frase de ejemplo 442,,PLACEHOLDER: revisar y reemplazar
+A1,word,colores,fjala443,pl_słowo443,palabra443,img/study.png,PLACEHOLDER: revisar y reemplazar
+A1,phrase,tiempo,Fraza e testit 444,Przykładowe zdanie 444,Frase de ejemplo 444,,PLACEHOLDER: revisar y reemplazar
+A1,word,colores,fjala445,pl_słowo445,palabra445,img/study.png,PLACEHOLDER: revisar y reemplazar
+A1,word,números,fjala446,pl_słowo446,palabra446,img/study.png,PLACEHOLDER: revisar y reemplazar
+A1,word,comida,fjala447,pl_słowo447,palabra447,img/food.png,PLACEHOLDER: revisar y reemplazar
+A1,word,números,fjala448,pl_słowo448,palabra448,img/study.png,PLACEHOLDER: revisar y reemplazar
+A1,phrase,colores,Fraza e testit 449,Przykładowe zdanie 449,Frase de ejemplo 449,,PLACEHOLDER: revisar y reemplazar
+A1,word,viaje,fjala450,pl_słowo450,palabra450,img/travel.png,PLACEHOLDER: revisar y reemplazar
+A1,word,números,fjala451,pl_słowo451,palabra451,img/study.png,PLACEHOLDER: revisar y reemplazar
+A1,word,colores,fjala452,pl_słowo452,palabra452,img/study.png,PLACEHOLDER: revisar y reemplazar
+A1,phrase,tiempo,Fraza e testit 453,Przykładowe zdanie 453,Frase de ejemplo 453,,PLACEHOLDER: revisar y reemplazar
+A1,word,cuerpo,fjala454,pl_słowo454,palabra454,img/people.png,PLACEHOLDER: revisar y reemplazar
+A1,phrase,familia,Fraza e testit 455,Przykładowe zdanie 455,Frase de ejemplo 455,,PLACEHOLDER: revisar y reemplazar
+A1,word,comida,fjala456,pl_słowo456,palabra456,img/food.png,PLACEHOLDER: revisar y reemplazar
+A1,word,compras,fjala457,pl_słowo457,palabra457,img/market.png,PLACEHOLDER: revisar y reemplazar
+A1,word,familia,fjala458,pl_słowo458,palabra458,img/people.png,PLACEHOLDER: revisar y reemplazar
+A1,phrase,familia,Fraza e testit 459,Przykładowe zdanie 459,Frase de ejemplo 459,,PLACEHOLDER: revisar y reemplazar
+A1,word,familia,fjala460,pl_słowo460,palabra460,img/people.png,PLACEHOLDER: revisar y reemplazar
+A1,word,familia,fjala461,pl_słowo461,palabra461,img/people.png,PLACEHOLDER: revisar y reemplazar
+A1,word,familia,fjala462,pl_słowo462,palabra462,img/people.png,PLACEHOLDER: revisar y reemplazar
+A1,word,tiempo,fjala463,pl_słowo463,palabra463,img/study.png,PLACEHOLDER: revisar y reemplazar
+A1,word,hogar,fjala464,pl_słowo464,palabra464,img/house.png,PLACEHOLDER: revisar y reemplazar
+A1,word,compras,fjala465,pl_słowo465,palabra465,img/market.png,PLACEHOLDER: revisar y reemplazar
+A1,word,compras,fjala466,pl_słowo466,palabra466,img/market.png,PLACEHOLDER: revisar y reemplazar

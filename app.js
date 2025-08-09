@@ -1,244 +1,40 @@
-// Claves de almacenamiento
-const KEYS = {
-  vocab: 'sqpl_app_vocab_custom',
-  progress: 'sqpl_app_progress',
-  rewards: 'sqpl_app_rewards',
-  rewardsHistory: 'sqpl_app_rewards_history',
-  flashState: 'sqpl_app_flash_state',
-  uiLang: 'sqpl_app_ui_lang',
-  plan: 'sqpl_app_plan'
-};
+// --- Keys & State ---
+const KEYS={coins:'pro_coins',level:'pro_level',progress:'pro_progress',leitner:'pro_leitner'};
+const $=s=>document.querySelector(s), $$=s=>Array.from(document.querySelectorAll(s));
+const shop=[{id:'meal',name:'Comida',cost:50},{id:'trip',name:'Viaje',cost:300},{id:'dance',name:'Baile',cost:60},{id:'massage',name:'Masaje',cost:120},{id:'surprise',name:'Sorpresa',cost:80},{id:'clothes',name:'Ropas',cost:200},{id:'earrings',name:'Pendientes',cost:90},{id:'flowers',name:'Flores',cost:40}];
+const state={activeLevel:localStorage.getItem(KEYS.level)||'A1',coins:parseInt(localStorage.getItem(KEYS.coins)||'0',10),content:null,practice:{mode:'image',pool:[],index:0,correct:0}};
+function toast(m){const t=$('#toast');t.textContent=m;t.classList.add('show');setTimeout(()=>t.classList.remove('show'),1400);} 
+function speak(text){ if(!('speechSynthesis'in window))return; const u=new SpeechSynthesisUtterance(text);u.lang='sq-AL';speechSynthesis.cancel();speechSynthesis.speak(u);}
+function setView(id){$$('.view').forEach(v=>v.classList.remove('active'));$('#view-'+id).classList.add('active');}
+function addCoins(n){state.coins+=n;localStorage.setItem(KEYS.coins,state.coins);$('#coinCount').textContent=state.coins;}
+$('#coinCount').textContent=state.coins; $$('.nav-btn').forEach(b=>b.onclick=()=>setView(b.dataset.view)); $('#activeLevel').textContent=state.activeLevel;
 
-// Estado simple
-auth = { user: 'guest' };
-const state = {
-  data: { words: [], phrases: [] },
-  uiLang: localStorage.getItem(KEYS.uiLang) || 'es',
-  ttsVoice: null,
-  flashQueue: [],
-  flashIndex: 0,
-  plan: [],
-  rewards: [
-    { id:'gift', name:'Regalo' },
-    { id:'dinner', name:'Cena' },
-    { id:'icecream', name:'Helado' },
-    { id:'massage', name:'Masaje' },
-  ]
-};
+// --- Load content ---
+async function load(){ const res=await fetch('i18n/content.json'); state.content=await res.json(); buildLevels(); buildShop(); buildTests(); setupPractice(); setupFlashcards(); }
+function getProg(l){const p=JSON.parse(localStorage.getItem(KEYS.progress)||'{}');return p[l]||{score:0,passed:false};}
+function setProg(l,o){const p=JSON.parse(localStorage.getItem(KEYS.progress)||'{}');p[l]=o;localStorage.setItem(KEYS.progress,JSON.stringify(p));}
+function buildLevels(){ const grid=$('#levelGrid'); grid.innerHTML=''; const lvls=['A1','B1','B2','C1']; lvls.forEach((lvl,i)=>{ const prev=i?getProg(lvls[i-1]).passed:true; const locked=!prev; const total=state.content[lvl].words.length; const card=document.createElement('div'); card.className='level-card'+(locked?' locked':''); card.innerHTML=`<div class="meta"><h3>${lvl}</h3></div><div class="progress"><div class="progress-bar" style="width:${Math.min(100,getProg(lvl).score)}%"></div></div><p class="muted">${total} ítems</p><div style="display:flex;gap:8px"><button class="btn" ${locked?'disabled':''} data-start="${lvl}">Estudiar</button><button class="btn secondary" ${locked?'disabled':''} data-test="${lvl}">Test</button></div>`; grid.appendChild(card);}); grid.querySelectorAll('[data-start]').forEach(b=>b.onclick=()=>{state.activeLevel=b.dataset.start;localStorage.setItem(KEYS.level,state.activeLevel);$('#activeLevel').textContent=state.activeLevel;setView('practice');setupPractice();}); grid.querySelectorAll('[data-test]').forEach(b=>b.onclick=()=>startTest(b.dataset.test));}
 
-// Utilidades
-const $ = sel => document.querySelector(sel);
-const $$ = sel => Array.from(document.querySelectorAll(sel));
-function toast(msg){ const t=$('#toast'); t.textContent=msg; t.classList.add('show'); setTimeout(()=>t.classList.remove('show'), 1600); }
-function speak(text, lang){
-  if(!('speechSynthesis' in window)) return toast('TTS no disponible');
-  const u = new SpeechSynthesisUtterance(text);
-  u.lang = lang; // 'sq-AL', 'pl-PL', 'es-ES' según disponibilidad
-  speechSynthesis.cancel();
-  speechSynthesis.speak(u);
-}
-function setView(id){ $$('.view').forEach(v=>v.classList.remove('active')); $(`#view-${id}`).classList.add('active'); }
+// --- Shop ---
+function buildShop(){const ul=$('#rewardShop');ul.innerHTML='';const hist=$('#rewardHistory');const h=JSON.parse(localStorage.getItem('pro_hist')||'[]');hist.innerHTML=h.slice().reverse().map(i=>`<li>${i.name} — <small>${new Date(i.date).toLocaleString()}</small></li>`).join(''); shop.forEach(it=>{const li=document.createElement('li');li.innerHTML=`<strong>${it.name}</strong><span>${it.cost} 🪙</span>`;const btn=document.createElement('button');btn.className='btn';btn.textContent='Canjear';btn.onclick=()=>{if(state.coins<it.cost)return toast('Monedas insuficientes');addCoins(-it.cost);h.push({id:it.id,name:it.name,date:new Date().toISOString()});localStorage.setItem('pro_hist',JSON.stringify(h));buildShop();toast('¡Canjeado!');};li.appendChild(btn);ul.appendChild(li);});}
 
-// Navegación
-$$('.nav-btn').forEach(btn=>btn.addEventListener('click',()=>setView(btn.dataset.view)));
+// --- Practice ---
+function setupPractice(){ $$('.tab').forEach(t=>t.classList.remove('active')); document.querySelector(`.tab[data-mode="${state.practice.mode}"]`).classList.add('active'); $$('.tab').forEach(t=>t.onclick=()=>{state.practice.mode=t.dataset.mode;setupPractice();}); const lvl=state.content[state.activeLevel]; let pool=[]; if(state.practice.mode==='image'){pool=lvl.words.slice(0,80).map(w=>({type:'image',prompt:w.img,answer:w.sq,options:makeOpts(w.sq,lvl.words.map(x=>x.sq),4)}));} else if(state.practice.mode==='phrase'){pool=lvl.phrases.slice(0,40).map(p=>({type:'phrase',prompt:`ES: ${p.es}\nPL: ${p.pl}`,answer:p.sq,options:makeOpts(p.sq,lvl.phrases.map(x=>x.sq),3)}));} else {pool=lvl.phrases.slice(0,40).map(p=>({type:'builder',prompt:`${p.es} / ${p.pl}`,answer:p.sq,words:shuffle(p.sq.split(' '))}));} state.practice.pool=shuffle(pool).slice(0,20); state.practice.index=0; state.practice.correct=0; renderExercise();}
+function makeOpts(correct, uni, n){const s=new Set([correct]);while(s.size<n){const c=uni[Math.floor(Math.random()*uni.length)]; if(c!==correct)s.add(c);}return shuffle([...s]);}
+function shuffle(a){return a.sort(()=>Math.random()-0.5);}
+function renderExercise(){ const root=$('#exerciseRoot'); root.innerHTML=''; const i=state.practice.index, pool=state.practice.pool; if(i>=pool.length){const score=Math.round((state.practice.correct/pool.length)*100);root.innerHTML=`<h3>¡Completado! ${score}%</h3>`;addCoins(state.practice.correct*2);const cur=getProg(state.activeLevel);setProg(state.activeLevel,{score:Math.max(cur.score,score),passed:(cur.passed||score>=80)});buildLevels();$('#exProg').style.width='100%';return;} const ex=pool[i]; const wrap=document.createElement('div'); wrap.className='exercise'; if(ex.type==='image'){wrap.innerHTML=`<div class="card"><img src="${ex.prompt}" alt="img" /><div class="label">¿Cuál es la palabra correcta en albanés?</div></div>`; const opts=document.createElement('div');opts.className='options'; ex.options.forEach(o=>{const b=document.createElement('button');b.className='btn';b.textContent=o;b.onclick=()=>check(o===ex.answer,ex.answer);opts.appendChild(b);}); wrap.appendChild(opts); const a=document.createElement('button');a.className='btn secondary';a.textContent='Audio SQ';a.onclick=()=>speak(ex.answer);wrap.appendChild(a);} else if(ex.type==='phrase'){const p=document.createElement('div');p.innerHTML=`<div class="card"><div class="label" style="padding:14px;white-space:pre-line">${ex.prompt}</div></div>`;wrap.appendChild(p); const opts=document.createElement('div');opts.className='options'; ex.options.forEach(o=>{const b=document.createElement('button');b.className='btn';b.textContent=o;b.onclick=()=>check(o===ex.answer,ex.answer);opts.appendChild(b);}); wrap.appendChild(opts); const a=document.createElement('button');a.className='btn secondary';a.textContent='Audio SQ';a.onclick=()=>speak(ex.answer);wrap.appendChild(a);} else {const prompt=document.createElement('div');prompt.className='muted';prompt.textContent=ex.prompt;wrap.appendChild(prompt); const area=document.createElement('div');area.className='drag-area';wrap.appendChild(area); const bank=document.createElement('div');bank.className='drag-area';wrap.appendChild(bank); ex.words.forEach(w=>{const c=document.createElement('span');c.className='chip';c.textContent=w;c.draggable=true;c.addEventListener('dragstart',e=>{e.dataTransfer.setData('text/plain',w);}); bank.appendChild(c);}); [area,bank].forEach(z=>{z.addEventListener('dragover',e=>e.preventDefault()); z.addEventListener('drop',e=>{e.preventDefault(); const w=e.dataTransfer.getData('text/plain'); const el=[...bank.children,...area.children].find(x=>x.textContent===w); if(el) z.appendChild(el);});}); const btn=document.createElement('button');btn.className='btn';btn.textContent='Comprobar';btn.onclick=()=>{const built=[...area.children].map(x=>x.textContent).join(' ').trim(); check(built===ex.answer,ex.answer);}; wrap.appendChild(btn); const a=document.createElement('button');a.className='btn secondary';a.textContent='Audio SQ';a.onclick=()=>speak(ex.answer);wrap.appendChild(a);} root.appendChild(wrap); $('#exProg').style.width=Math.round((i/pool.length)*100)+'%';}
+function check(ok,sol){ if(ok){state.practice.correct++;addCoins(5);toast('✔ Correcto');}else{toast('✖ Incorrecto');} state.practice.index++; renderExercise();}
+$('#btnSkip').onclick=()=>{state.practice.index++;renderExercise();};
 
-// i18n UI mínima
-const uiLangSelect = $('#uiLang');
-uiLangSelect.value = state.uiLang;
-uiLangSelect.addEventListener('change',()=>{
-  state.uiLang = uiLangSelect.value;
-  localStorage.setItem(KEYS.uiLang, state.uiLang);
-  loadUILabels();
-});
+// --- Mini-tests por tema ---
+function buildTests(){ const grid=$('#testGrid'); grid.innerHTML=''; const lvl=state.content[state.activeLevel]; const themes=state.content[state.activeLevel].themes||[]; themes.forEach(th=>{const card=document.createElement('div');card.className='level-card';card.innerHTML=`<img src="${th.img}" style="width:100%;height:120px;object-fit:cover;border-radius:10px"/><h3>${th.name}</h3><button class="btn" data-theme="${th.id}">Empezar test</button>`; grid.appendChild(card);}); grid.querySelectorAll('[data-theme]').forEach(b=>b.onclick=()=>startThemeTest(b.dataset.theme));}
+function startThemeTest(theme){ setView('minitests'); const lvl=state.content[state.activeLevel]; const words=lvl.words.filter(w=> (theme==='comida'&&w.img.includes('food')) || (theme==='casa'&&w.img.includes('house')) || (theme==='viaje'&&w.img.includes('travel')) || (theme==='compras'&&w.img.includes('market')) || (theme==='trabajo'&&w.img.includes('study')) || (theme==='cultura'&&w.img.includes('people')) ); const pool=shuffle(words).slice(0,10).map(w=>({type:'image',prompt:w.img,answer:w.sq,options:makeOpts(w.sq,words.map(x=>x.sq),4)})); const test={pool,index:0,correct:0}; const root=$('#testRoot'); root.innerHTML=''; function render(){ root.innerHTML=''; if(test.index>=test.pool.length){ const sc=Math.round(test.correct/test.pool.length*100); root.innerHTML=`<h3>Resultado: ${sc}%</h3>`; addCoins(test.correct*3); return;} const ex=test.pool[test.index]; const card=document.createElement('div'); card.className='card'; card.innerHTML=`<img src="${ex.prompt}"><div class="label">Elige la palabra correcta</div>`; root.appendChild(card); const opts=document.createElement('div'); opts.className='options'; ex.options.forEach(o=>{const b=document.createElement('button');b.className='btn';b.textContent=o;b.onclick=()=>{ if(o===ex.answer){test.correct++; addCoins(6); toast('✔');} else toast('✖'); test.index++; render();}; opts.appendChild(b);}); root.appendChild(opts);} render();}
 
-async function loadUILabels(){
-  const res = await fetch('i18n/ui.json');
-  const ui = await res.json();
-  const t = (k)=> ui[state.uiLang][k] || k;
-  // Etiquetas básicas
-  $('#vocabTitle').textContent = t('vocabTitle');
-  $('#addCustomBtn').textContent = t('addCustom');
-  $('#btnAgain').textContent = t('again');
-  $('#btnGood').textContent = t('good');
-  $('#btnSpeak').textContent = t('speak');
-}
+// --- Flashcards (Leitner simple) ---
+function setupFlashcards(){ const boxes=JSON.parse(localStorage.getItem(KEYS.leitner)||'{"1":[],"2":[],"3":[],"4":[],"5":[]}'); if(boxes['1'].length===0){ const seed=state.content[state.activeLevel].words.slice(0,40).map(w=>w.sq); boxes['1']=seed; localStorage.setItem(KEYS.leitner, JSON.stringify(boxes)); } let current=null; function pick(){ for(const b of ['1','2','3','4','5']) if(boxes[b].length) return {box:b,word:boxes[b][0]}; return null; } function render(){ current=pick(); if(!current){ $('#flashFront').textContent='¡Sin tarjetas pendientes!'; $('#flashInfo').textContent=''; return;} const item=findWord(current.word); $('#flashFront').textContent=`${current.word}\nPL: ${item?item.pl:'-'}\nES: ${item?item.es:'-'}`; $('#flashInfo').textContent=`Caja ${current.box} — Total ${Object.values(boxes).reduce((a,b)=>a+b.length,0)}`; } function findWord(sq){ return state.content[state.activeLevel].words.find(w=>w.sq===sq); } $('#btnShow').onclick=()=>render(); $('#btnWrong').onclick=()=>{ const i=boxes[current.box].indexOf(current.word); if(i>-1) boxes[current.box].splice(i,1); boxes['1'].push(current.word); localStorage.setItem(KEYS.leitner,JSON.stringify(boxes)); render(); }; $('#btnRight').onclick=()=>{ const i=boxes[current.box].indexOf(current.word); if(i>-1) boxes[current.box].splice(i,1); const n=Math.min(5,parseInt(current.box)+1).toString(); boxes[n].push(current.word); localStorage.setItem(KEYS.leitner,JSON.stringify(boxes)); addCoins(2); render(); }; $('#btnAudio').onclick=()=>speak(current.word); render();}
 
-// Carga de datos
-async function loadData(){
-  const base = await fetch('i18n/phrases.json').then(r=>r.json());
-  const custom = JSON.parse(localStorage.getItem(KEYS.vocab) || '{"words":[],"phrases":[]}');
-  state.data = {
-    words: [...base.words, ...custom.words],
-    phrases: [...base.phrases, ...custom.phrases]
-  };
-  buildCategoryFilter();
-  renderVocabTable();
-  initFlashcards();
-  initPlan();
-  initRewards();
-}
+// --- Export/Import ---
+$('#btnExport').onclick=()=>{ const data={coins:state.coins,progress:JSON.parse(localStorage.getItem(KEYS.progress)||'{}'),leitner:JSON.parse(localStorage.getItem(KEYS.leitner)||'{}')}; const blob=new Blob([JSON.stringify(data,null,2)],{type:'application/json'}); const a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='progreso.json';a.click(); };
+$('#fileImport').onchange=e=>{ const f=e.target.files[0]; if(!f) return; const fr=new FileReader(); fr.onload=()=>{ try{ const obj=JSON.parse(fr.result); localStorage.setItem(KEYS.coins,obj.coins||'0'); localStorage.setItem(KEYS.progress,JSON.stringify(obj.progress||{})); localStorage.setItem(KEYS.leitner,JSON.stringify(obj.leitner||{})); location.reload(); }catch{ toast('Archivo inválido'); } }; fr.readAsText(f); };
 
-function buildCategoryFilter(){
-  const set = new Set(state.data.words.map(w=>w.cat).concat(state.data.phrases.map(p=>p.cat)).filter(Boolean));
-  const sel = $('#catFilter');
-  sel.innerHTML = '<option value="">Todas las categorías</option>' + Array.from(set).sort().map(c=>`<option value="${c}">${c}</option>`).join('');
-}
-
-// Render tabla vocabulario
-function rowHtml(row){
-  const speakBtns = `
-    <button onclick="speak('${row.sq.replace(/'/g,"\\'")}', 'sq-AL')">SQ</button>
-    <button onclick="speak('${row.pl.replace(/'/g,"\\'")}', 'pl-PL')">PL</button>
-    <button onclick="speak('${row.es.replace(/'/g,"\\'")}', 'es-ES')">ES</button>`;
-  return `<tr><td>${row.sq}</td><td>${row.pl}</td><td>${row.es}</td><td>${row.cat||''}</td><td>${speakBtns}</td></tr>`;
-}
-function renderVocabTable(){
-  const q = $('#searchInput').value.toLowerCase();
-  const cat = $('#catFilter').value;
-  const rows = [...state.data.words, ...state.data.phrases]
-    .filter(r => (!cat || r.cat===cat))
-    .filter(r => !q || Object.values(r).join(' ').toLowerCase().includes(q));
-  $('#vocabBody').innerHTML = rows.map(rowHtml).join('');
-}
-$('#searchInput').addEventListener('input', renderVocabTable);
-$('#catFilter').addEventListener('change', renderVocabTable);
-
-// Añadir personalizado
-$('#addCustomBtn').addEventListener('click', ()=>$('#customDialog').showModal());
-$('#saveCustom').addEventListener('click', (e)=>{
-  e.preventDefault();
-  const sq=$('#sqInput').value.trim();
-  const pl=$('#plInput').value.trim();
-  const es=$('#esInput').value.trim();
-  const cat=$('#catInput').value.trim()||'personal';
-  if(!sq||!pl||!es) return;
-  const store = JSON.parse(localStorage.getItem(KEYS.vocab)||'{"words":[],"phrases":[]}');
-  // Heurística: si es corto, palabra; si lleva espacio, frase
-  const target = (sq.includes(' ')||pl.includes(' ')||es.includes(' ')) ? 'phrases' : 'words';
-  store[target].push({sq,pl,es,cat});
-  localStorage.setItem(KEYS.vocab, JSON.stringify(store));
-  $('#customDialog').close();
-  ['#sqInput','#plInput','#esInput','#catInput'].forEach(id=>$(id).value='');
-  loadData();
-  toast('Guardado');
-});
-
-// Flashcards (SRS simple)
-function initFlashcards(){
-  const items = [...state.data.words, ...state.data.phrases];
-  // crear tarjetas con timestamps; si no hay estado previo, ahora
-  const now = Date.now();
-  const saved = JSON.parse(localStorage.getItem(KEYS.flashState)||'{}');
-  state.flashQueue = items.map((it,i)=>{
-    const key = it.sq+"|"+it.es;
-    const due = saved[key]?.due || now;
-    const interval = saved[key]?.interval || 1; // minutos
-    return { ...it, key, due, interval };
-  }).sort((a,b)=>a.due-b.due);
-  nextFlashcard();
-}
-function nextFlashcard(){
-  const now = Date.now();
-  const next = state.flashQueue.find(it=>it.due<=now) || state.flashQueue[0];
-  if(!next){ $('#flashFront').textContent='—'; $('#flashBack').textContent='—'; return; }
-  state.currentFlash = next;
-  $('#flashFront').textContent = next.sq;
-  $('#flashBack').textContent = `${next.pl} \n ${next.es}`;
-}
-function scheduleFlash(quality){
-  const sKey = KEYS.flashState;
-  const store = JSON.parse(localStorage.getItem(sKey)||'{}');
-  const cur = state.currentFlash;
-  const mult = quality==='good' ? 3 : 0.5; // muy simple
-  const newInterval = Math.max(1, Math.round((cur.interval||1)*mult));
-  const due = Date.now() + newInterval*60*1000; // minutos
-  store[cur.key] = { interval:newInterval, due };
-  localStorage.setItem(sKey, JSON.stringify(store));
-  toast(quality==='good'?'¡Bien! Reaparece más tarde.':'No pasa nada, la verás pronto.');
-  initFlashcards();
-}
-$('#btnGood').addEventListener('click',()=>scheduleFlash('good'));
-$('#btnAgain').addEventListener('click',()=>scheduleFlash('again'));
-$('#btnSpeak').addEventListener('click',()=>speak(state.currentFlash?.sq||'', 'sq-AL'));
-
-// Plan semanal 3h (sesiones de 30–45 min)
-function initPlan(){
-  const stored = JSON.parse(localStorage.getItem(KEYS.plan)||'[]');
-  if(stored.length){ state.plan = stored; }
-  else {
-    state.plan = [
-      { id:1, title:'Vocabulario: 20 min + juegos: 10–15 min', done:false },
-      { id:2, title:'Flashcards: 30 min', done:false },
-      { id:3, title:'Juego: Casa (15–20 min) + repaso 10 min', done:false },
-      { id:4, title:'Vocabulario nuevo: 20 min + práctica 10 min', done:false },
-      { id:5, title:'Juego: Mercado (20–25 min)', done:false },
-      { id:6, title:'Flashcards: 20 min + frases útiles 10 min', done:false }
-    ];
-  }
-  renderPlan();
-}
-function renderPlan(){
-  const ul = $('#planList');
-  ul.innerHTML = '';
-  state.plan.forEach(item=>{
-    const li = document.createElement('li');
-    li.innerHTML = `<label class="switch"><input type="checkbox" ${item.done?'checked':''} /> <span>${item.title}</span></label>`;
-    const cb = li.querySelector('input');
-    cb.addEventListener('change',()=>{ item.done = cb.checked; savePlan(); updateProgress(); maybeUnlockReward(); });
-    ul.appendChild(li);
-  });
-  updateProgress();
-}
-function savePlan(){ localStorage.setItem(KEYS.plan, JSON.stringify(state.plan)); }
-function updateProgress(){
-  const total = state.plan.length; const done = state.plan.filter(i=>i.done).length;
-  const pct = Math.round(done/total*100);
-  $('#progressBar').style.width = pct+'%';
-}
-
-// Recompensas
-function initRewards(){
-  const list = $('#rewardsList');
-  const hist = $('#rewardsHistory');
-  const history = JSON.parse(localStorage.getItem(KEYS.rewardsHistory)||'[]');
-  list.innerHTML=''; hist.innerHTML='';
-  state.rewards.forEach(r=>{
-    const li = document.createElement('li');
-    li.className='panel';
-    li.innerHTML = `<strong>${r.name}</strong><br/><button data-id="${r.id}">Marcar como entregada</button>`;
-    li.querySelector('button').addEventListener('click',()=>{
-      history.push({ id:r.id, name:r.name, date:new Date().toISOString() });
-      localStorage.setItem(KEYS.rewardsHistory, JSON.stringify(history));
-      renderHistory();
-      toast('¡Recompensa entregada!');
-    });
-    list.appendChild(li);
-  });
-  function renderHistory(){
-    const items = JSON.parse(localStorage.getItem(KEYS.rewardsHistory)||'[]');
-    hist.innerHTML = items.slice(-10).reverse().map(i=>`<li class="panel"><strong>${i.name}</strong><br/><small>${new Date(i.date).toLocaleString()}</small></li>`).join('');
-  }
-  renderHistory();
-}
-function maybeUnlockReward(){
-  const done = state.plan.filter(i=>i.done).length;
-  const total = state.plan.length;
-  if(done===total){ toast('¡Semana completada! Recompensa desbloqueada.'); }
-}
-
-// PWA hint toggle
-$('#pwaInstallHint').addEventListener('change',()=>toast('Preferencia guardada'));
-
-// Lanzar escena de juego desde botones
-$$('.play-btn').forEach(btn=>btn.addEventListener('click',()=>{
-  const scene = btn.dataset.scene; window.__launchScene(scene);
-  setView('games');
-  toast('Cargando juego…');
-}));
-
-// Tabla reactiva al cargar
-window.addEventListener('DOMContentLoaded', async ()=>{
-  await loadUILabels();
-  await loadData();
-  renderVocabTable();
-});
+window.addEventListener('DOMContentLoaded', load);
